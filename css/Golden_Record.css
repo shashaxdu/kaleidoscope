@@ -1,0 +1,254 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+body{
+	background: black;
+	
+}
+
+.fixed-bg {
+    /* The background image */
+  background-image: url(../img/background/SolarSystem_ToScale.png);
+    /* Set a specified height, or the minimum height for the background image */
+    min-height: 850px;
+    /* Set background image to fixed (don't scroll along with the page) */
+    background-attachment: fixed;
+    /* Center the background image */
+    background-position: center;
+    /* Set the background image to no repeat */
+    background-repeat: no-repeat;
+    /* Scale the background image to be as large as possible */
+    background-size: cover;
+}
+
+header{
+	padding:30px;
+	padding-top: 20px;	
+}
+
+.navbarleft{
+	position: absolute;
+	margin-left: 45px;
+}
+
+ a{
+ 	color:white;
+ }
+#Me_Nav_Icon{
+	position: absolute;
+	width: 50px;
+	top: 50px;
+}
+
+#Earth_Nav_Icon{
+	position: absolute;
+	width: 50px;
+	top: 150px;
+}
+
+#SolarSystem_Nav_Icon{
+	position: absolute;
+	width: 50px;
+	top: 250px;
+}
+
+#MilkyWay_Nav_Icon{
+	position: absolute;
+	width: 50px;
+	top: 350px;
+} 
+
+#ObUniv_Nav_Icon{
+	position: absolute;
+	width: 50px;
+	top: 450px;
+} 
+
+#Infinity_Nav_Icon {
+	position: absolute;
+	width: 50px;
+	top: 550px;
+}
+
+#person{
+	position:absolute;
+	align-content: center;
+	margin: 190px 120px 0px 200px;	
+}
+
+#infinity {
+	position:absolute;
+	align-content: center;
+	margin: 190px 120px 0px 465px;	
+}
+
+h1{
+	color:white;
+	font-size: 50px;
+	font-style: normal;
+	font-weight: normal;
+	font-family: 'Quicksand', sans-serif;
+
+}
+
+h2{
+	font-size: 24px;
+	font-family: 'Josefin Sans', sans-serif;
+	color: white;
+}
+
+
+
+h3{
+	font-size: 14px;
+font-family: 'Montserrat', sans-serif;
+	color: black;
+}
+
+
+footer h3{
+		font-size: 16px;
+		color:white;
+	font-style: normal;
+	font-weight: normal;
+
+	}
+
+#X{
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+	position: fixed;
+	z-index: 1; 
+	 visibility: hidden;
+	  	top: 140px;
+	  	left: 280px;
+}
+
+#site{
+	position: fixed;
+	color: white;
+	bottom: 40px;
+	right: 285px;
+	z-index: 2;
+	visibility: hidden;
+}
+
+iframe {
+	position: fixed;
+	z-index: 1;
+	 
+	 visibility: hidden;
+	 	top: 120px;
+
+	margin: 60px 0 0 300px;
+	border-color: white;
+	border-width: 2px;
+	border-radius: 25px;
+	width: 60%;
+	height: 580px;
+
+}
+
+#aboutrecord {
+	position: fixed;
+	background-color: rgba(245,214,147, 0.8);
+	color: black;
+	border-radius: 25px;
+	height: 400px;
+	padding: 10px 30px 30px 30px;
+	margin: -20px 50px 0 290px;
+	z-index: 0;
+}
+
+
+#aboutrecord h3, #aboutrecord h2{
+	font-size: 16px;
+	color: black;
+	text-align: center;
+	margin-top: 20px;
+}
+#imagerecord {
+
+	position: fixed;
+	margin-top: 250px;
+	margin-left:20px;
+width: 220px;
+cursor: pointer;
+background-color: rgba(245,214,147, 0.8);
+border-radius: 110px;
+}
+
+#createrecord {
+	position: fixed;
+	align-items: center;
+	text-align: center;
+	border-radius: 25px;
+	background-color: rgba(245,214,147, 0.8);
+	border-color: rgba(0,0,0,0);
+	margin: 480px 0 0 840px;
+	padding: 5px 0px 5px 0px;
+	width: 200px;
+	cursor: pointer;
+	
+}
+
+#voyagerimg{
+	position: fixed;
+	right: 200px;
+	bottom: 100px;
+	text-align: center;
+}
+
+#voyagerimg h3{	
+	font-size:13px;
+	margin-top: 3px;
+	color: white;
+
+}
+
+footer {
+	/*background-color: #FFFFFF;*/
+	text-align: center;
+	opacity: 0.6;
+	padding-bottom:25px;
+	}
+
+#footertext{
+width: 650px;
+margin-left:380px;
+position: absolute;
+bottom: 20px;
+}
+
+a#leftbutton {
+	
+	padding: 10px 50px 10px 30px; 
+	/*background-color: #9C9BAB;
+	border-radius: 25px;*/
+}
+
+#leftbutton{
+	position: fixed;
+	left: 300px;
+	bottom:10px;
+	width:50px;
+
+}
+
+a#rightbutton {
+
+	padding: 10px 30px 10px 50px; 
+	
+	/*background-color: #9C9BAB;
+	border-radius: 25px;*/
+}
+
+#rightbutton{
+	width:50px;
+
+	position: fixed;
+	right: 300px;
+	bottom: 10px;
+}

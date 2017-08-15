@@ -1,0 +1,269 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+body{
+	background: black;
+	
+}
+ a{
+ 	color:white;
+ }
+
+.fixed-bg {
+    /* The background image */
+    background-image: url(../img/background/Interstellar_Neighborhood_Sans_Stars.png);
+    /* Set a specified height, or the minimum height for the background image */
+    min-height: 850px;
+    /* Set background image to fixed (don't scroll along with the page) */
+    background-attachment: fixed;
+    /* Center the background image */
+    background-position: center;
+    /* Set the background image to no repeat */
+    background-repeat: no-repeat;
+    /* Scale the background image to be as large as possible */
+    background-size: cover;
+}
+
+header{
+	padding:30px;
+	padding-top: 20px;	
+}
+
+.navbarleft{
+	position: absolute;
+	margin-left: 45px;
+}
+
+
+#Me_Nav_Icon{
+	position: absolute;
+	width: 50px;
+	top: 50px;
+}
+
+#Earth_Nav_Icon{
+	position: absolute;
+	width: 50px;
+	top: 150px;
+}
+
+#SolarSystem_Nav_Icon{
+	position: absolute;
+	width: 50px;
+	top: 250px;
+}
+
+#MilkyWay_Nav_Icon{
+	position: absolute;
+	width: 50px;
+	top: 350px;
+} 
+
+#ObUniv_Nav_Icon{
+	position: absolute;
+	width: 50px;
+	top: 450px;
+} 
+
+#Infinity_Nav_Icon {
+	position: absolute;
+	width: 50px;
+	top: 550px;
+}
+
+#person{
+	position:absolute;
+	align-content: center;
+	margin: 190px 120px 0px 200px;	
+}
+
+#infinity {
+	position:absolute;
+	align-content: center;
+	margin: 190px 120px 0px 465px;	
+}
+
+h1{
+	color:white;
+	font-size: 50px;
+	font-style: normal;
+	font-weight: normal;
+	font-family: 'Quicksand', sans-serif;
+
+}
+
+h2{
+	font-size: 24px;
+	font-family: 'Josefin Sans', sans-serif;
+	color: white;
+}
+
+
+
+h3{
+	color: white;
+	font-size: 18px;
+font-family: 'Montserrat', sans-serif;
+z-index: 1;
+	/*Body Text*/
+}
+
+
+
+
+#siriusimg{
+	position: fixed;
+	top: 405px;
+	left: 530px;
+	width: 90px;
+	cursor: pointer;
+	visibility: visible;
+
+}
+#siriustext{
+	position: fixed;
+	top: 425px;
+	left: 470px;
+	visibility: hidden;
+}
+
+#ssimg{
+	position: fixed;
+	top: 355px;
+	left: 745px;
+	width: 65px;
+
+}
+ #sstext{
+ 	position: fixed;
+	top: 365px;
+	left: 690px;
+
+ }
+
+#proximaimg{
+	position: fixed;
+	top: 349px;
+	left: 842px;
+	width: 35px;
+	cursor: pointer;
+	visibility: visible;
+}
+
+
+#proximatext{
+	position: fixed;
+	top: 300px;
+	left: 840px;
+	visibility: hidden;
+
+}
+
+
+
+#proxsuntext{
+	visibility: hidden;
+	position: fixed;
+	right: 70px;
+	width: 353px;
+	top: 200px;
+	background-color: #BADAEA;
+	border-radius: 25px;
+	padding:20px ;
+	color: black;
+	text-align: center;
+	font-size: 16px;
+
+}
+
+#sirsuntext{
+	visibility: hidden;
+	position: fixed;
+	right: 70px;
+	width: 353px;
+	top: 200px;
+	background-color: #BADAEA;
+	border-radius: 25px;
+	padding:20px ;
+	color: black;
+	text-align: center;
+	font-size: 16px;
+
+}
+
+
+footer h3{
+		font-size: 16px;
+		color:white;
+	font-style: normal;
+	font-weight: normal;
+
+
+	}
+
+/*#quote h3 {
+	margin-top: 300px;
+	text-align: center;
+	font-style: normal;
+	font-weight: normal;
+	color: grey;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+#author h3{
+	text-align: center;
+	margin-bottom: 100px;
+	font-style: normal;
+	font-weight: normal;
+	color: grey;
+	font-family: 'Josefin Sans', sans-serif;
+}
+*/
+
+
+footer {
+	/*background-color: #FFFFFF;*/
+	text-align: center;
+	opacity: 0.6;
+	padding-bottom:25px;
+	}
+
+#footertext{
+width: 650px;
+margin-left:380px;
+position: absolute;
+bottom: 20px;
+text-align: center;
+}
+
+a#leftbutton {
+	
+	padding: 10px 50px 10px 30px; 
+	/*background-color: #9C9BAB;
+	border-radius: 25px;*/
+}
+
+#leftbutton{
+	position: fixed;
+	left: 300px;
+	bottom:10px;
+	width:50px;
+
+}
+
+a#rightbutton {
+
+	padding: 10px 30px 10px 50px; 
+	
+	/*background-color: #9C9BAB;
+	border-radius: 25px;*/
+}
+
+#rightbutton{
+	width:50px;
+
+	position: fixed;
+	right: 300px;
+	bottom: 10px;
+}

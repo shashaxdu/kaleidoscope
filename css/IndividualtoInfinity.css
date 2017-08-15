@@ -1,0 +1,166 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+body{
+
+    background-color: black;
+}
+
+ a{
+ 	color:white;
+ }
+.fixed-bg {
+    /* The background image */
+    background-image: url(../img/background/Milky_Way.jpg);
+    /* Set a specified height, or the minimum height for the background image */
+    min-height: 850px;
+    /* Set background image to fixed (don't scroll along with the page) */
+    background-attachment: fixed;
+    /* Center the background image */
+    background-position: center;
+    /* Set the background image to no repeat */
+    background-repeat: no-repeat;
+    /* Scale the background image to be as large as possible */
+    background-size: cover;
+}
+
+.navbarleft{
+	position: absolute;
+	margin-left: 45px;
+}
+
+
+#Me_Nav_Icon{
+	position: absolute;
+	width: 50px;
+	top: 50px;
+}
+
+#Earth_Nav_Icon{
+	position: absolute;
+	width: 50px;
+	top: 150px;
+}
+
+#SolarSystem_Nav_Icon{
+	position: absolute;
+	width: 50px;
+	top: 250px;
+}
+
+#MilkyWay_Nav_Icon{
+	position: absolute;
+	width: 50px;
+	top: 350px;
+} 
+
+#ObUniv_Nav_Icon{
+	position: absolute;
+	width: 50px;
+	top: 450px;
+} 
+
+#Infinity_Nav_Icon {
+	position: absolute;
+	width: 50px;
+	top: 550px;
+}
+
+#person{
+	position:absolute;
+	align-content: center;
+	margin: 190px 120px 0px 200px;	
+}
+
+#infinity {
+	position:absolute;
+	align-content: center;
+	margin: 190px 120px 0px 465px;	
+}
+
+header{
+	padding:30px;
+	padding-top: 20px;	
+}
+
+
+h1, a{
+	color:white;
+	font-size: 50px;
+	font-style: normal;
+	font-weight: normal;
+	font-family: 'Quicksand', sans-serif;
+}
+
+h2{
+	color: white;
+	font-size: 24px;
+	font-family: 'Josefin Sans', sans-serif;
+	/*FontFamily should be Avenir--This is Second Header*/
+}
+
+h3{
+	color: white;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	/*Body Text*/
+}
+
+#intro{
+	margin-top: 490px;
+	text-align: center;
+			font-style: normal;
+		font-weight: normal;
+}
+
+#quote h3 {
+	margin-top: 130px;
+	text-align: center;
+	font-style: normal;
+	font-weight: normal;
+	font-family: 'Josefin Sans', sans-serif;
+    font-size: 14pt;
+}
+
+#author h3{
+	text-align: center;
+	margin-bottom: 50px;
+	font-style: normal;
+	font-weight: normal;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+
+#aboutimg{
+	width: 50px;
+	margin-right: 20px;
+	position: fixed;
+	bottom: 45px;
+	right: -4px;
+}
+
+#abouttext{
+	font-size: 12px;
+	position: fixed;
+	bottom: 20px;
+	right: 40px;
+}
+
+footer h3{
+		font-size: 16px;
+		color: white;
+		font-style: normal;
+		font-weight: normal;
+
+
+}
+
+footer {
+	/*background-color: #FFFFFF;*/
+	text-align: center;
+	opacity: 0.6;
+	padding-bottom:4px;
+	}
+

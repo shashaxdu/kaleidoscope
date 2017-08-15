@@ -1,0 +1,325 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+body{
+	background: black;
+	
+}
+ a{
+ 	color:white;
+ }
+.fixed-bg {
+    /* The background image */
+    background-image: url(../img/background/SolarSystem_Bkgd.png);
+    /* Set a specified height, or the minimum height for the background image */
+    min-height: 850px;
+    /* Set background image to fixed (don't scroll along with the page) */
+    background-attachment: fixed;
+    /* Center the background image */
+    background-position: center;
+    /* Set the background image to no repeat */
+    background-repeat: no-repeat;
+    /* Scale the background image to be as large as possible */
+    background-size: cover;
+}
+
+header{
+	padding:30px;
+	padding-top: 20px;	
+}
+
+.navbarleft{
+	position: absolute;
+	margin-left: 45px;
+}
+
+
+#Me_Nav_Icon{
+	position: absolute;
+	width: 50px;
+	top: 50px;
+}
+
+#Earth_Nav_Icon{
+	position: absolute;
+	width: 50px;
+	top: 150px;
+}
+
+#SolarSystem_Nav_Icon{
+	position: absolute;
+	width: 50px;
+	top: 250px;
+}
+
+#MilkyWay_Nav_Icon{
+	position: absolute;
+	width: 50px;
+	top: 350px;
+} 
+
+#ObUniv_Nav_Icon{
+	position: absolute;
+	width: 50px;
+	top: 450px;
+} 
+
+#Infinity_Nav_Icon {
+	position: absolute;
+	width: 50px;
+	top: 550px;
+}
+
+h1{
+	color:white;
+	font-size: 50px;
+	font-style: normal;
+	font-weight: normal;
+	font-family: 'Quicksand', sans-serif;
+
+}
+
+h2{
+	font-size: 24px;
+	font-family: 'Josefin Sans', sans-serif;
+	color: white;
+		font-style: normal;
+	font-weight: normal;
+}
+
+
+
+h3{
+	color: white;
+	font-size: 14px;
+font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+
+}
+
+footer h3{
+		font-size: 16px;
+		color:white;
+	font-style: normal;
+	font-weight: normal;
+
+	}
+
+
+/*a {
+	position:absolute;
+	align-content: center;
+	margin: 190px 66px 0px 200px;
+	
+}*/
+
+/*footer {
+	position: absolute;
+	text-align: center;
+}
+*/
+
+
+#mercuryimg{
+	position: fixed;
+	left: 255px;
+	top: 605px;
+	width: 10px;
+
+}
+
+#mercurytext{
+	visibility: hidden;
+		position: fixed;
+	left: 255px;
+	top: 605px;
+	width: 10px;
+}
+
+#venusimg{
+	position: fixed;
+	left: 314px;
+	top: 569px;
+	width: 26px;
+}
+
+#venustext{
+	visibility: hidden;
+		position: fixed;
+	left: 314px;
+	top: 579px;
+	width: 26px;
+}
+
+#earthimg{
+	position: fixed;
+	left:378px;
+	top: 535px;
+	width: 30px;
+}
+
+#earthtext{
+	visibility: hidden;
+	position: fixed;
+	left:378px;
+	top: 550px;
+	width: 30px;
+}
+
+#marsimg{
+	position: fixed;
+	left: 445px;
+	top: 515px;
+	width: 14px;
+}
+
+#marstext{
+	visibility: hidden;
+		position: fixed;
+	left: 445px;
+	top: 515px;
+	width: 14px;
+}
+
+#jupiterimg{
+	position: fixed;
+	left: 490px;
+	top: 276px;
+	width: 300px;
+
+}
+
+#jupitertext{
+	visibility: hidden;
+		position: fixed;
+	left: 540px;
+	top: 556px;
+	width: 300px;
+}
+
+#uranusimg{
+	position: fixed;
+	left: 1093px;
+	top: 125px;
+	width: 160px;
+}
+
+
+#uranustext{
+	visibility: hidden;
+		position: fixed;
+	right: 151px;
+	top: 225px;
+	width: 160px;
+}
+
+#neptuneimg{
+	position: fixed;
+	left: 1255px;
+	top: 74px;
+	width: 100px;
+}
+
+#neptunetext{
+	visibility: hidden;
+		position: fixed;
+	right: 65px;
+	top: 165px;
+	width: 100px;
+}
+
+#saturnimg{
+	position: fixed;
+	left: 785px;
+	top: 172px;
+	width: 310px;
+
+}
+
+#saturntext{
+	visibility: hidden;
+		position: fixed;
+	left: 840px;
+	top: 400px;
+	width: 310px;
+}
+
+#voyagerimg{
+	position: fixed;
+	right: 200px;
+	bottom: 100px;
+	text-align: center;
+}
+
+#voyagerimg h3{	
+	font-size:13px;
+	margin-top: 3px;
+
+}
+
+#t123{
+	margin-top: -120px;
+	text-align: center;
+}
+
+#t1{
+	margin-top: 90px;
+	visibility: hidden;
+}
+
+#t2{
+	visibility: hidden;
+}
+
+#t3{
+	visibility: hidden;
+	margin-top: -30px;
+	margin-left: 40px;
+}
+
+footer {
+	/*background-color: #FFFFFF;*/
+	text-align: center;
+	opacity: 0.6;
+	padding-bottom:25px;
+	}
+
+#footertext{
+width: 680px;
+margin-left:380px;
+position: absolute;
+bottom: 20px;
+}
+
+a#leftbutton {
+	
+	padding: 10px 50px 10px 30px; 
+	/*background-color: #9C9BAB;
+	border-radius: 25px;*/
+}
+
+#leftbutton{
+	position: fixed;
+	left: 300px;
+	bottom:10px;
+	width:50px;
+
+}
+
+a#rightbutton {
+
+	padding: 10px 30px 10px 50px; 
+	
+	/*background-color: #9C9BAB;
+	border-radius: 25px;*/
+}
+
+#rightbutton{
+	width:50px;
+
+	position: fixed;
+	right: 300px;
+	bottom: 10px;
+}

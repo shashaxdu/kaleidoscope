@@ -1,0 +1,247 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+body{
+	background: black;
+	
+}
+
+ a{
+ 	color:white;
+ }
+.fixed-bg {
+    /* The background image */
+  background-image: url(../img/background/Infinity_3_Gradients.png);
+    /* Set a specified height, or the minimum height for the background image */
+    min-height: 850px;
+    /* Set background image to fixed (don't scroll along with the page) */
+    background-attachment: fixed;
+    /* Center the background image */
+    background-position: center;
+    /* Set the background image to no repeat */
+    background-repeat: no-repeat;
+    /* Scale the background image to be as large as possible */
+    background-size: cover;
+}
+
+header{
+	padding:30px;
+	padding-top: 20px;	
+}
+
+.navbarleft{
+	position: absolute;
+	margin-left: 45px;
+}
+
+
+#Me_Nav_Icon{
+	position: absolute;
+	width: 50px;
+	top: 50px;
+}
+
+#Earth_Nav_Icon{
+	position: absolute;
+	width: 50px;
+	top: 150px;
+}
+
+#SolarSystem_Nav_Icon{
+	position: absolute;
+	width: 50px;
+	top: 250px;
+}
+
+#MilkyWay_Nav_Icon{
+	position: absolute;
+	width: 50px;
+	top: 350px;
+} 
+
+#ObUniv_Nav_Icon{
+	position: absolute;
+	width: 50px;
+	top: 450px;
+} 
+
+#Infinity_Nav_Icon {
+	position: absolute;
+	width: 50px;
+	top: 550px;
+}
+
+#person{
+	position:absolute;
+	align-content: center;
+	margin: 190px 120px 0px 200px;	
+}
+
+#infinity {
+	position:absolute;
+	align-content: center;
+	margin: 190px 120px 0px 465px;	
+}
+
+h1{
+	color:white;
+	font-size: 50px;
+	font-style: normal;
+	font-weight: normal;
+	font-family: 'Quicksand', sans-serif;
+
+}
+
+h2{
+	font-size: 24px;
+	font-family: 'Josefin Sans', sans-serif;
+	color: white;
+}
+
+
+
+h3, button{
+	color: black;
+	font-size: 18px;
+font-family: 'Montserrat', sans-serif;
+z-index: 1;
+	/*Body Text*/
+}
+
+
+footer h3{
+		font-size: 16px;
+		color:white;
+	font-style: normal;
+	font-weight: normal;
+
+	}
+
+#X{
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+	position: fixed;
+	z-index: 1; 
+	 visibility: hidden;
+	  	top: 140px;
+	  	left: 330px;
+}
+
+
+
+iframe {
+	position: fixed;
+	z-index: 1;
+	 
+	 visibility: hidden;
+	 	top: 120px;
+
+	margin: 60px 0 0 350px;
+	border-color: white;
+	border-width: 2px;
+	border-radius: 25px;
+	height: 480px;
+
+}
+
+#earth{
+	width: 80px;
+	position: fixed;
+	top: 400px;
+	left: 640px;
+	cursor: pointer;
+}
+
+#infinity{
+	width: 150px;
+	position: absolute;
+	top: -80px;
+	right: 120px;
+	cursor: pointer;
+
+
+}
+
+
+#infinitytext{
+	visibility: hidden;
+	position: absolute;
+	text-align: center;
+	right: 80px;
+	width: 450px;
+	top: 250px;
+	height: 300px;
+	background-color: #BADAEA;
+	border-radius: 25px;
+	padding: 20px;
+	font-size: 16px;
+}
+
+button {
+	margin: 2% 5% 0 5%;
+	align-items: center;
+	text-align: center;
+	border-radius: 25px;
+	background-color: #3295A5;
+	border-color: rgba(0,0,0,0);
+}
+
+#how{
+	margin-left: 40px;
+}
+
+#rocketship{
+	visibility: hidden;
+	position: fixed;
+	bottom:50px;
+	right: 50px;
+
+}
+
+footer {
+	/*background-color: #FFFFFF;*/
+	text-align: center;
+	opacity: 0.6;
+	padding-bottom:25px;
+	}
+
+#footertext{
+width: 690px;
+margin-left:380px;
+position: absolute;
+bottom: 10px;
+text-align: center;
+}
+
+a#leftbutton {
+	
+	padding: 10px 50px 10px 30px; 
+	/*background-color: #9C9BAB;
+	border-radius: 25px;*/
+}
+
+#leftbutton{
+	position: fixed;
+	left: 300px;
+	bottom:10px;
+	width:50px;
+
+}
+
+a#rightbutton {
+
+	padding: 10px 30px 10px 50px; 
+	
+	/*background-color: #9C9BAB;
+	border-radius: 25px;*/
+}
+
+#rightbutton{
+	width:50px;
+
+	position: fixed;
+	right: 300px;
+	bottom: 10px;
+}
