@@ -2,7 +2,6 @@
 /* CSS Document */
 
 
-
 body{
 
     background-color: black;
@@ -15,7 +14,7 @@ body{
     /* The background image */
     background-image: url(../img/background/Milky_Way.jpg);
     /* Set a specified height, or the minimum height for the background image */
-    min-height: 850px;
+    min-height:100vh;
     /* Set background image to fixed (don't scroll along with the page) */
     background-attachment: fixed;
     /* Center the background image */
@@ -26,63 +25,34 @@ body{
     background-size: cover;
 }
 
-.navbarleft{
-	position: absolute;
-	margin-left: 45px;
+.navbar-fixed-left {
+  float: left;
+	margin-left: 3%;
 }
 
-
-#Me_Nav_Icon{
-	position: absolute;
-	width: 50px;
-	top: 50px;
+.navbarleft {
+  display: block;
 }
 
-#Earth_Nav_Icon{
-	position: absolute;
-	width: 50px;
-	top: 150px;
+.navbarleft img {
+  width: 50px;
 }
 
-#SolarSystem_Nav_Icon{
-	position: absolute;
-	width: 50px;
-	top: 250px;
+#images {
+  height: 50vh;
+  display:flex;
+  justify-content: space-around;
+  align-items:center;
 }
 
-#MilkyWay_Nav_Icon{
-	position: absolute;
-	width: 50px;
-	top: 350px;
-} 
-
-#ObUniv_Nav_Icon{
-	position: absolute;
-	width: 50px;
-	top: 450px;
-} 
-
-#Infinity_Nav_Icon {
-	position: absolute;
-	width: 50px;
-	top: 550px;
-}
-
-#person{
-	position:absolute;
-	align-content: center;
-	margin: 190px 120px 0px 200px;	
-}
-
-#infinity {
-	position:absolute;
-	align-content: center;
-	margin: 190px 120px 0px 465px;	
+#images a, #images img {
+  width: 16vw !important;
+  margin: 3%;
 }
 
 header{
 	padding:30px;
-	padding-top: 20px;	
+	padding-top: 20px;
 }
 
 
@@ -108,11 +78,12 @@ h3{
 	/*Body Text*/
 }
 
-#intro{
-	margin-top: 490px;
+#intro {
 	text-align: center;
-			font-style: normal;
-		font-weight: normal;
+	font-style: normal;
+	font-weight: normal;
+  bottom: 0;
+  position: absolute;
 }
 
 #quote h3 {
@@ -163,4 +134,3 @@ footer {
 	opacity: 0.6;
 	padding-bottom:4px;
 	}
-
