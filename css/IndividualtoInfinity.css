@@ -27,7 +27,8 @@ body{
 
 .navbar-fixed-left {
   float: left;
-	margin-left: 3%;
+	margin-left: 2%;
+	margin-top: 1%;
 }
 
 .navbarleft {
@@ -46,8 +47,11 @@ body{
 }
 
 #images a, #images img {
-  width: 16vw !important;
-  margin: 3%;
+  width: 15vw !important;
+  margin-right: 12%;
+  margin-left:8%;
+  margin-top: 12%;
+  margin-bottom: 10%;
 }
 
 header{
@@ -58,23 +62,25 @@ header{
 
 h1, a{
 	color:white;
-	font-size: 50px;
+	font-size: 3.3em;
 	font-style: normal;
-	font-weight: normal;
 	font-family: 'Quicksand', sans-serif;
 }
 
 h2{
 	color: white;
-	font-size: 24px;
+	font-size: 1.4em;
+	font-weight: 100;
 	font-family: 'Josefin Sans', sans-serif;
 	/*FontFamily should be Avenir--This is Second Header*/
 }
 
 h3{
 	color: white;
-	font-size: 16px;
+	font-size: 1.1em;
+	line-height: 1.4em;
 	font-family: 'Montserrat', sans-serif;
+	text-align: center
 	/*Body Text*/
 }
 
@@ -82,8 +88,8 @@ h3{
 	text-align: center;
 	font-style: normal;
 	font-weight: normal;
-  bottom: 0;
-  position: absolute;
+    bottom: 5%;
+	position: absolute;
 }
 
 #quote h3 {
