@@ -2,16 +2,18 @@
 /* CSS Document */
 
 
-body{
+/* Backgrounds */
 
+body{
     background-color: black;
 }
 
- a{
+a{
  	color:white;
- }
-.fixed-bg {
-    /* The background image */
+}
+
+.fixed-bg-index {
+    /* The background image for the Index page */
     background-image: url(../img/background/Milky_Way.jpg);
     /* Set a specified height, or the minimum height for the background image */
     min-height:100vh;
@@ -25,14 +27,101 @@ body{
     background-size: cover;
 }
 
+.fixed-bg-earth {
+    /* The background image for the Earth page */
+    background-image: url(../img/background/Earth_Moon_Sun_Bkgd.png);
+    /* Set a specified height, or the minimum height for the background image */
+    min-height: 100vh;
+    /* Set background image to fixed (don't scroll along with the page) */
+    background-attachment: fixed;
+    /* Center the background image */
+    background-position: center;
+    /* Set the background image to no repeat */
+    background-repeat: no-repeat;
+    /* Scale the background image to be as large as possible */
+    background-size: cover;
+}
+
+
+/* CSS Attributes - Index page only */
+
+#images a, #images img {
+  width: 15vmax !important;
+  margin-right: 12%;
+  margin-left:8%;
+  margin-top: 28%;
+	z-index: 1;
+}
+
+#aboutimg{
+	width: 3.5vw;
+	position: fixed;
+	bottom: 8%;
+	right: 3%;
+	z-index: 2;
+}
+
+#abouttext{
+	font-size: 2vmin;
+	text-align: center;
+	position: fixed;
+	bottom: 3%;
+	right: 3%;
+	z-index: 2;
+}
+
+
+/* CSS Attributes - Earth page only */
+
+#moonimg{
+	position: fixed;
+	bottom: 60%;
+	right: 30%;
+	width: 12vw !important;
+	cursor: pointer;
+	visibility: visible;
+	z-index: 2;
+}
+
+#sunimg{
+	position: fixed;
+	bottom: 80%;
+	right: 19%;
+	width: 8vw !important;
+	cursor: pointer;
+	visibility: visible;
+	z-index: 1;
+}
+
+#earthimg{
+	position: fixed;
+	bottom: 3%;
+	right: 40%;
+	width: 35vw !important;
+	cursor: pointer;
+	visibility: visible;
+	z-index: 3;
+}
+
+#suntext, #moontext, #earthtext{
+	visibility: hidden;
+	position: absolute;
+	top: 45%;
+	right: 3%;
+}
+
+
+/* Shared CSS Attributes - all pages */
+
 .navbar-fixed-left {
-  float: left;
-	margin-left: 2%;
-	margin-top: 1%;
+  position: fixed;
+	padding-left: 2.5%;
+	padding-top: 180px;
 }
 
 .navbarleft {
   display: block;
+	padding-bottom: 3vh;
 }
 
 .navbarleft img {
@@ -46,97 +135,114 @@ body{
   align-items:center;
 }
 
-#images a, #images img {
-  width: 15vw !important;
-  margin-right: 12%;
-  margin-left:8%;
-  margin-top: 12%;
-  margin-bottom: 10%;
+header1{
+	position: fixed;
+	padding-top: 10px; 
+	padding-left: 3%;
+	z-index: 4;
 }
 
-header{
-	padding:30px;
-	padding-top: 20px;
+header2{
+	position: fixed;
+	padding-top: 75px;
+	padding-left: 3%;
 }
 
+a{
+ 	color:white;
+ }
 
-h1, a{
+h1{
 	color:white;
-	font-size: 3.3em;
+	font-size: 3.5em;
 	font-style: normal;
 	font-family: 'Quicksand', sans-serif;
 }
 
 h2{
 	color: white;
-	font-size: 1.4em;
+	font-size: 1.6em;
 	font-weight: 100;
 	font-family: 'Josefin Sans', sans-serif;
-	/*FontFamily should be Avenir--This is Second Header*/
 }
 
-h3{
+h3{ /*bottom Intro text*/
 	color: white;
-	font-size: 1.1em;
+	font-size: 2.5vmin;
 	line-height: 1.4em;
-	font-family: 'Montserrat', sans-serif;
-	text-align: center
-	/*Body Text*/
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 1px; 
+	text-align: center;
 }
 
-#intro {
+h4{ /*pop-up text*/
+	color: white;
+	font-size: 2vmin;
+	line-height: 1.2em;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 1px; 
+	text-align: right; 
+}
+
+#intro { /*bottom Intro text*/
 	text-align: center;
 	font-style: normal;
 	font-weight: normal;
     bottom: 5%;
 	position: absolute;
-}
-
-#quote h3 {
-	margin-top: 130px;
-	text-align: center;
-	font-style: normal;
-	font-weight: normal;
-	font-family: 'Josefin Sans', sans-serif;
-    font-size: 14pt;
-}
-
-#author h3{
-	text-align: center;
-	margin-bottom: 50px;
-	font-style: normal;
-	font-weight: normal;
-	font-family: 'Josefin Sans', sans-serif;
+	z-index: 3;
 }
 
 
-#aboutimg{
-	width: 50px;
-	margin-right: 20px;
-	position: fixed;
-	bottom: 45px;
-	right: -4px;
-}
-
-#abouttext{
-	font-size: 12px;
-	position: fixed;
-	bottom: 20px;
-	right: 40px;
-}
+/* Footer */
 
 footer h3{
-		font-size: 16px;
-		color: white;
-		font-style: normal;
-		font-weight: normal;
-
-
+	font-size: 16px;
+	color: white;
+	font-style: normal;
+	font-weight: normal;
 }
 
 footer {
 	/*background-color: #FFFFFF;*/
 	text-align: center;
 	opacity: 0.6;
-	padding-bottom:4px;
+	padding-bottom:5%;
 	}
+
+#footertext{
+	width: 650px;
+	margin-left:380px;
+	position: absolute;
+	bottom: 20px;
+}
+
+
+/* Horizontal Bottom Navbar - all pages sans Index */
+
+/*a#leftbutton {
+
+	padding: 10px 50px 10px 30px;
+	/*background-color: #9C9BAB;
+	border-radius: 25px;*/
+
+#leftbutton{
+	position: fixed;
+	left: 2.5%;
+	bottom:15px;
+	width:40px;
+}
+
+/*a#rightbutton {
+	padding: 10px 30px 10px 50px;
+	/*background-color: #9C9BAB;
+	border-radius: 25px;*/
+
+#rightbutton{
+	position: fixed;
+	right: 2.5%;
+	bottom: 15px;
+	width: 40px;
+}
+
+
