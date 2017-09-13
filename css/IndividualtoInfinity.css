@@ -70,6 +70,13 @@ a{
 	z-index: 2;
 }
 
+#person:hover {
+  width: 16vmax;
+}
+
+#infinity:hover {
+  width: 16vmax;
+}
 
 /* CSS Attributes - Earth page only */
 
@@ -137,7 +144,7 @@ a{
 
 header1{
 	position: fixed;
-	padding-top: 10px; 
+	padding-top: 10px;
 	padding-left: 3%;
 	z-index: 4;
 }
@@ -171,7 +178,7 @@ h3{ /*bottom Intro text*/
 	font-size: 2.5vmin;
 	line-height: 1.4em;
 	font-family: 'Open Sans', sans-serif;
-	letter-spacing: 1px; 
+	letter-spacing: 1px;
 	text-align: center;
 }
 
@@ -180,8 +187,8 @@ h4{ /*pop-up text*/
 	font-size: 2vmin;
 	line-height: 1.2em;
 	font-family: 'Open Sans', sans-serif;
-	letter-spacing: 1px; 
-	text-align: right; 
+	letter-spacing: 1px;
+	text-align: right;
 }
 
 #intro { /*bottom Intro text*/
@@ -244,5 +251,3 @@ footer {
 	bottom: 15px;
 	width: 40px;
 }
-
-
