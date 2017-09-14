@@ -136,10 +136,15 @@ a{
 }
 
 #images {
-  height: 50vh;
+  height: 80vh;
   display:flex;
   justify-content: space-around;
   align-items:center;
+}
+@media (min-width: 600px) {
+  #images {
+    height: 50vh;
+  }
 }
 
 header1{
