@@ -86,22 +86,12 @@ a{
 }
 
 #person:hover {
-<<<<<<< HEAD
 	width: 16vmax;
 }
  
 #infinity:hover {
 	width: 16vmax;
 }
-
-=======
-  width: 16vmax;
-}
-
-#infinity:hover {
-  width: 16vmax;
-}
->>>>>>> origin/relativeStyling
 
 /* Earth Only - Earth, Moon, Sun */
 
@@ -485,6 +475,7 @@ top: 5px;
   justify-content: space-around;
   align-items:center;
 }
+
 @media (min-width: 600px) {
   #images {
     height: 50vh;
