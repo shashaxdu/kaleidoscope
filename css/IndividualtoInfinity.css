@@ -86,6 +86,7 @@ a{
 }
 
 #person:hover {
+<<<<<<< HEAD
 	width: 16vmax;
 }
  
@@ -93,6 +94,14 @@ a{
 	width: 16vmax;
 }
 
+=======
+  width: 16vmax;
+}
+
+#infinity:hover {
+  width: 16vmax;
+}
+>>>>>>> origin/relativeStyling
 
 /* Earth Only - Earth, Moon, Sun */
 
@@ -476,6 +485,11 @@ top: 5px;
   justify-content: space-around;
   align-items:center;
 }
+@media (min-width: 600px) {
+  #images {
+    height: 50vh;
+  }
+}
 
 @media (min-width: 600px) {/*Vertically align images*/
 	#images {
@@ -485,7 +499,7 @@ top: 5px;
 
 header1{
 	position: fixed;
-	padding-top: 10px; 
+	padding-top: 10px;
 	padding-left: 3%;
 	z-index: 4;
 }
@@ -519,7 +533,7 @@ h3{ /*bottom Intro text*/
 	font-size: 2.5vmin;
 	line-height: 1.4em;
 	font-family: 'Open Sans', sans-serif;
-	letter-spacing: 1px; 
+	letter-spacing: 1px;
 	text-align: center;
 }
 
@@ -528,8 +542,8 @@ h4{ /*pop-up text*/
 	font-size: 2vmin;
 	line-height: 1.2em;
 	font-family: 'Open Sans', sans-serif;
-	letter-spacing: 1px; 
-	text-align: right; 
+	letter-spacing: 1px;
+	text-align: right;
 }
 
 #intro { /*bottom Intro text*/
@@ -581,5 +595,3 @@ footer {
 	bottom: 15px;
 	width: 40px;
 }
-
-
