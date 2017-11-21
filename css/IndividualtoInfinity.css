@@ -2,20 +2,21 @@
 /* CSS Document */
 
 
+/* Backgrounds */
 
 body{
-
     background-color: black;
 }
 
- a{
+a{
  	color:white;
- }
-.fixed-bg {
-    /* The background image */
+}
+
+.fixed-bg-index {
+    /* The background image for the Index page */
     background-image: url(../img/background/Milky_Way.jpg);
     /* Set a specified height, or the minimum height for the background image */
-    min-height: 850px;
+    min-height:100vh;
     /* Set background image to fixed (don't scroll along with the page) */
     background-attachment: fixed;
     /* Center the background image */
@@ -26,141 +27,562 @@ body{
     background-size: cover;
 }
 
-.navbarleft{
-	position: absolute;
-	margin-left: 45px;
+.fixed-bg-earth {
+    /* The background image for the Earth page */
+    background-image: url(../img/background/Earth_Moon_Sun_Bkgd.png);
+    /* Set a specified height, or the minimum height for the background image */
+    min-height: 100vh;
+    /* Set background image to fixed (don't scroll along with the page) */
+    background-attachment: fixed;
+    /* Center the background image */
+    background-position: center;
+    /* Set the background image to no repeat */
+    background-repeat: no-repeat;
+    /* Scale the background image to be as large as possible */
+    background-size: cover;
+}
+
+.fixed-bg-avatar {
+    /* The background image */
+	background-image: url(../img/background/Earth_Natural_Blue.jpg);
+    /* Set a specified height, or the minimum height for the background image */
+    min-height: 100vh;
+   /* Set background image to fixed (don't scroll along with the page) */
+    background-attachment: fixed;
+    /* Center the background image */
+    background-position: center;
+    /* Set the background image to no repeat */
+    background-repeat: no-repeat;
+    /* Scale the background image to be as large as possible */
+    background-size: cover;
 }
 
 
-#Me_Nav_Icon{
+/* Index Only */
+
+#images a, #images img {
+  	width: 15vmax !important;
+  	margin-right: 12%;
+  	margin-left:8%;
+  	margin-top: 28%;
+	z-index: 1;
+}
+
+#aboutimg{
+	width: 3.5vw;
+	position: fixed;
+	bottom: 8%;
+	right: 3%;
+	z-index: 2;
+}
+
+#abouttext{
+	font-size: 2vmin;
+	text-align: center;
+	position: fixed;
+	bottom: 3%;
+	right: 3%;
+	z-index: 2;
+}
+
+#person:hover {
+	width: 16vmax;
+}
+ 
+#infinity:hover {
+	width: 16vmax;
+}
+
+/* Earth Only - Earth, Moon, Sun */
+
+#moonimg{
+	position: fixed;
+	bottom: 60%;
+	right: 30%;
+	width: 12vw !important;
+	cursor: pointer;
+	visibility: visible;
+	z-index: 2;
+}
+
+#sunimg{
+	position: fixed;
+	bottom: 80%;
+	right: 19%;
+	width: 8vw !important;
+	cursor: pointer;
+	visibility: visible;
+	z-index: 1;
+}
+
+#earthimg{
+	position: fixed;
+	bottom: 3%;
+	right: 40%;
+	width: 35vw !important;
+	cursor: pointer;
+	visibility: visible;
+	z-index: 3;
+}
+
+#suntext, #moontext, #earthtext{
+	visibility: hidden;
 	position: absolute;
-	width: 50px;
+	top: 45%;
+	right: 3%;
+}
+
+
+/* Avatar Only */
+
+/*#screen{
+	background-color: rgba(190, 174, 236);
+	width: auto;
+	min-height: 850px;
+	z-index: 0;
+}*/
+
+#tarjeta { /*Passport*/
+	position: fixed;
+	left: 30%;
+	top: 30%;
+	width: 50vw;
+	height: 350px;
+	border-radius:15px;
+	background-color: rgba(149, 182, 202, .95)
+}
+
+form {/*This Can Be Changed to Whatever I Believe and Should Work Properly*/
+	font-family: 'Open Sans', sans-serif;
+	color: black;
+	font-size: 8pt;
+	padding-top: 5%;
+	visibility: visible;
+}
+
+input[type=text], select {/*form fields on passport.*/
+    width: 100%;
+    padding: 2%;
+    margin: 3% 5% 3% 5%;
+    display: inline-block;
+    border: 0px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	text-align: left;
+}
+
+
+/*#tarjeta h2{
+		color: black;
+		text-align: left;
+		padding-left: 10px;
+		padding-right: 10px;	
+}*/
+
+#tarjeta img{ /*Blank Avatar Image*/
+	padding-top: 8%;
+	padding-right: 8%;
+	width:90%;
+	margin: 10% 0 0 10%;
+	align-content: center;
+}
+
+button { /* Clear Button */
+	margin: 2% 10% 2% 5%;
+	align-items: center;
+	text-align: center;
+	border-radius: 4px;
+	background-color: #C9D0D4;
+	border-color: rgba(0,0,0,0);
+}
+
+#textbuildavatar{ /* Submit Button */
+	border-radius: 4px;
+	background-color: #C9D0D4;
+	border-color: rgba(0,0,0,0);
+	margin: 0 60px 0 60px;
+	padding: 10px 0 10px 0;
+}
+
+#tarjeta h3 { /* Button Text */
+	text-align: center;
+	text-transform: uppercase;
+	color: black;
+	font-size: 10px;
+	margin-top: 25px;
+}
+
+button[type=reset]{
+margin-left: 5%;
+padding: 2px 5px 2px 5px;
+}
+
+button[type=submit]{
+visibility: hidden;
+padding: 2px 5px 2px 5px;
+}
+
+.buildavatar {
+	cursor: pointer;
+}
+
+/*Printed Badge*/
+
+#AvatarProfBadge {
+	position: fixed;
+	left: 9%;
+	top: 230px;
+	visibility: hidden;
+}
+
+#AvatarProfBadge h3{
+	font-size: 15px;
+	text-align: left;
+	padding: 0px;
+	margin: 20px 0 0 15px;
+}
+
+
+div#page2_avatarcreator {
+	visibility: hidden;
+}
+
+#avatarcreator {
+	background-color: rgba(255, 255, 255, 0);
+	border-radius: 25px;
+	margin: 150px 0 0 50px;
+	width: 30%;
+	height: 30%;
+}
+
+#Astronaut-Blank{
+	position: absolute;
+	width: 300px;
+}
+
+.scaled {
+	position: absolute;
+/*	visibility: hidden;*/
+}
+
+/* THIS IS THE SCROLLING SIDE TO SIDE*/
+.container-outer{
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+	width: 400px;
+	height: 160px;
+	background-color: rgba(255, 255, 255, 0.3);
+	margin: 0 0 15px 70px;
+	border-radius: 15px;
+}
+
+.container-inner{
+	margin: 3px 5px 0 5px;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.container-inner img {
+	cursor: pointer;
+}
+
+.container-inner.hair img {
+	margin: 3px 5px 0 5px;
+	/*width: 100px;*/
+	border-radius: 25px;
+	width: 150px;
+	/*background-color: rgba(255, 255, 255, 0.4);*/
+}
+
+
+#Hair_01{
+left: 5px;
+top: 5px;
+	visibility: hidden;
+}
+
+#Hair_02{
 	top: 50px;
+	left: 16px;
+	width: 298px;
+	height: 236px;
+	visibility: hidden;
 }
 
-#Earth_Nav_Icon{
-	position: absolute;
-	width: 50px;
+ #Hair_03{
+	width: 247px;
+	height: 148px;
+	top: 60px;
+	left:41px;
+	visibility: hidden;
+}
+
+ #Hair_04{
+	top: 0px;
+	left: 35px;
+	visibility: hidden;
+}
+
+ #Hair_05{
+	top: -40px;
+	left: 35px;
+	visibility: hidden;
+}
+
+ #Hair_06{
+	top: -50px;
+	left: -110px;
+	visibility: hidden;
+}
+
+ #Hair_07{
+	top: -60px;
+	left: -40px;
+	visibility: hidden;
+}
+
+/*************************/
+
+.container-inner.eye img {
+	margin: 30px 15px 0 12px;
+	border-radius: 25px;
+	padding: 15px;
+	width: 100px;
+/*	background-color: rgba(255, 255, 255, 0.4);*/
+}
+
+
+#Eye_05{
+	left: 100px;
 	top: 150px;
+	visibility: hidden;
 }
 
-#SolarSystem_Nav_Icon{
-	position: absolute;
+#Eye_06{
+	left: 105px;
+	top: 170px;
+	visibility: hidden;
+}
+
+ #Eye_07{
+	left: 110px;
+	top: 180px;
+	visibility: hidden;
+}
+
+ #Eye_08{
+	left: 90px;
+	top: 140px;
+	visibility: hidden;
+}
+
+ #Eye_09{
+	left: 95px;
+	top: 150px;
+	visibility: hidden;
+}
+
+/*************************/
+
+.container-inner.badge img {
+	margin: 40px 15px 0 12px;
+	border-radius: 25px;
+	padding: 15px;
+	width: 90px;
+/*	background-color: rgba(255, 255, 255, 0.4);*/
+}
+
+
+#Badge_09{
+	left: 70px;
+	top: 330px;
+	visibility: hidden;
+}
+
+#Badge_10{
+	left: 70px;
+	top: 330px;
+	visibility: hidden;
+}
+
+ #Badge_11{
+	left: 70px;
+	top: 330px;
+	visibility: hidden;
+}
+
+ #Badge_12{
+	left: 70px;
+	top: 330px;
+	visibility: hidden;
+}
+
+#saveavatar {
+	position: fixed;
+	right: 7%;
+	bottom: 7%;
+	width: 60px;
+
+	font-family: 'Josefin Sans', sans-serif;
+	color: black;
+	text-align: center;
+	
+	padding-left: 10px;
+	padding-right: 10px;	
+	
+	visibility: hidden;
+}
+
+.endanimation {
+	position: fixed;
+	right: 40px;
+	visibility: hidden;
+}
+
+#endanimationtext{
+	font-size: 15px;
+	font-weight: 500px;
+	color: white;
+
+}
+
+#endanimationphoto{
 	width: 50px;
-	top: 250px;
-}
-
-#MilkyWay_Nav_Icon{
-	position: absolute;
-	width: 50px;
-	top: 350px;
-} 
-
-#ObUniv_Nav_Icon{
-	position: absolute;
-	width: 50px;
-	top: 450px;
-} 
-
-#Infinity_Nav_Icon {
-	position: absolute;
-	width: 50px;
-	top: 550px;
-}
-
-#person{
-	position:absolute;
-	align-content: center;
-	margin: 190px 120px 0px 200px;	
-}
-
-#infinity {
-	position:absolute;
-	align-content: center;
-	margin: 190px 120px 0px 465px;	
-}
-
-header{
-	padding:30px;
-	padding-top: 20px;	
+	margin-left: 8px;
 }
 
 
-h1, a{
+/* Shared CSS Attributes - all pages */
+
+.navbar-fixed-left {
+  position: fixed;
+	padding-left: 2.5%;
+	padding-top: 180px;
+}
+
+.navbarleft {
+  display: block;
+	padding-bottom: 3vh;
+}
+
+.navbarleft img {
+  width: 50px;
+}
+
+#images {
+  height: 80vh;
+  display:flex;
+  justify-content: space-around;
+  align-items:center;
+}
+
+@media (min-width: 600px) {
+  #images {
+    height: 50vh;
+  }
+}
+
+@media (min-width: 600px) {/*Vertically align images*/
+	#images {
+		height: 50vh;
+	}
+}
+
+header1{
+	position: fixed;
+	padding-top: 10px;
+	padding-left: 3%;
+	z-index: 4;
+}
+
+header2{
+	position: fixed;
+	padding-top: 75px;
+	padding-left: 3%;
+}
+
+a{
+ 	color:white;
+ }
+
+h1{
 	color:white;
-	font-size: 50px;
+	font-size: 3.5em;
 	font-style: normal;
-	font-weight: normal;
 	font-family: 'Quicksand', sans-serif;
 }
 
 h2{
 	color: white;
-	font-size: 24px;
+	font-size: 1.6em;
+	font-weight: 100;
 	font-family: 'Josefin Sans', sans-serif;
-	/*FontFamily should be Avenir--This is Second Header*/
 }
 
-h3{
+h3{ /*bottom Intro text*/
 	color: white;
-	font-size: 16px;
-	font-family: 'Montserrat', sans-serif;
-	/*Body Text*/
-}
-
-#intro{
-	margin-top: 490px;
+	font-size: 2.5vmin;
+	line-height: 1.4em;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 1px;
 	text-align: center;
-			font-style: normal;
-		font-weight: normal;
 }
 
-#quote h3 {
-	margin-top: 130px;
+h4{ /*pop-up text*/
+	color: white;
+	font-size: 2vmin;
+	line-height: 1.2em;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 1px;
+	text-align: right;
+}
+
+#intro { /*bottom Intro text*/
 	text-align: center;
 	font-style: normal;
 	font-weight: normal;
-	font-family: 'Josefin Sans', sans-serif;
-    font-size: 14pt;
+    bottom: 5%;
+	position: absolute;
+	z-index: 3;
 }
 
-#author h3{
+
+/* Footer */
+
+/*footer h3{
+	color: white;
+	font-size: 2.5vmin;
+	line-height: 1.4em;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 1px; 
 	text-align: center;
-	margin-bottom: 50px;
-	font-style: normal;
-	font-weight: normal;
-	font-family: 'Josefin Sans', sans-serif;
-}
-
-
-#aboutimg{
-	width: 50px;
-	margin-right: 20px;
-	position: fixed;
-	bottom: 45px;
-	right: -4px;
-}
-
-#abouttext{
-	font-size: 12px;
-	position: fixed;
-	bottom: 20px;
-	right: 40px;
-}
-
-footer h3{
-		font-size: 16px;
-		color: white;
-		font-style: normal;
-		font-weight: normal;
-
-
-}
+}*/
 
 footer {
-	/*background-color: #FFFFFF;*/
 	text-align: center;
-	opacity: 0.6;
-	padding-bottom:4px;
+	padding-bottom:1.8%;
 	}
 
+/*#footertext{
+	width: 70vw;
+	position: absolute;
+	bottom: 1%;
+	z-index: 3;
+}*/
+
+
+/* Horizontal Bottom Navbar - all pages sans Index */
+
+#leftbutton{
+	position: fixed;
+	left: 2.5%;
+	bottom:15px;
+	width:40px;
+}
+
+#rightbutton{
+	position: fixed;
+	right: 2.5%;
+	bottom: 15px;
+	width: 40px;
+}
