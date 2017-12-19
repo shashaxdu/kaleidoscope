@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+
 
 	<!-- Bootstrap -->
     <!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-	<link rel="stylesheet" type="text/css" href="css/IndividualtoInfinity.css"> 
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/IndividualtoInfinity.css">
 	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Allura" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Quicksand:300" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:200" rel="stylesheet">
@@ -35,15 +36,15 @@
 			</header1>
 			<header2>
 				<h2> Create Your Intergalactic Passport</h2>
-			</header2> 
- 
+			</header2>
+
 			<div class="navbar-fixed-left">
 			<a href="Avatar.html" class="navbarleft">
 				<img src="img/navbar/Me_Nav_Icon_Blue.png" alt="Me_Nav_Icon" id="Me_Nav_Icon" >
 			</a>
 			<a href="Earth.html" class="navbarleft">
 				<img src="img/navbar/Earth_Nav_Icon.png" alt="Earth_Nav_Icon" id="Earth_Nav_Icon" >
-			</a>				
+			</a>
 			<a href="SolarSystem.html" class="navbarleft">
 				<img src="img/navbar/SolarSystem_Nav_Icon.png" alt="SolarSystem_Nav_Icon" id="SolarSystem_Nav_Icon" >
 			</a>
@@ -63,9 +64,9 @@
 				<div class="row">
 					<form class="col-xs-7" id="AvatarForm" onsubmit="return false;" name="avatarprofform">
 						<input type="text" id="fname" name="firstname" maxlength="13" placeholder="First Name">
-						
+
 						<input type="text" id="age" name="age" maxlength="2" placeholder="Age">
-						
+
 						<input type="text" id="country" name="country" placeholder="Country Name">
 
 						<select id="planet" name="planet">
@@ -78,7 +79,7 @@
 							<option value="saturn"> Saturn</option>
 							<option value="uranus"> Uranus</option>
 							<option value="neptune">Neptune</option>
-						
+
 						</select>
 
 
@@ -89,7 +90,7 @@
 							<option value="cartwheelgalaxy"> Cartwheel</option>
 							<option value="milkyway">Milky Way</option>
 							<option value="sombrerogalaxy"> Sombrero</option>
-							<option value="sunflowergalaxy"> Sunflower</option>             
+							<option value="sunflowergalaxy"> Sunflower</option>
 							<option value="sunflowergalaxy"> Tadpole</option>
 							<option value="whirlpoolgalaxy"> Whirlpool</option>
 						</select>
@@ -97,11 +98,11 @@
 						<button type="reset" value="Reset" class="col-xs-3"><h3>Clear</h3></button>
 						<button type="submit" value="Submit" class="col-xs-3" id="savebutton" onclick="saveinput()">Submit</button>
 
-					</form> 
-					<div class="col-xs-5"> 
+					</form>
+					<div class="col-xs-5">
 						<img src="img/individualtoinfinity/User_Icon.png" class="buildavatar">
 						<h3 class="buildavatar" id="textbuildavatar"> Submit</h3>
-					</div>	
+					</div>
 				</div>
 				<!--- The next step to this is to decide about interaction regarding the create avatar section-->
 				 <div id="AvatarProfBadge">
@@ -111,7 +112,7 @@
 					<h3 id="Badgeplanet"> </h3>
 					<h3 id="Badgegalaxy">  </h3>
 				</div>
-			
+
 			</div>
 
 
@@ -120,7 +121,7 @@
 				<div class="row">
 					<div class="col-xs-3"></div>
 					<div class="col-xs-4" id="avatarcreator">
-						
+
 						<img src="img/avatar/Astronaut_Icon_2.png" id="Astronaut-Blank" class="scaled">
 						<img src="img/avatar/Hair_01.png" id="Hair_01" class="scaled" >
 						<img src="img/avatar/Hair_02.png" id="Hair_02" class="scaled">
@@ -145,7 +146,7 @@
 						<div class="container-outer">
 							<div class="container-inner hair">
 								<img src="img/avatar/Hair_01.png" "id="001">
-								
+
 								<img src="img/avatar/Hair_06.png" id="014">
 								<img src="img/avatar/Hair_07.png" id="015">
 								<img src="img/avatar/Hair_05.png" id="013">
@@ -153,7 +154,7 @@
 								<img src="img/avatar/Hair_02.png"  id="002">
 								<img src="img/avatar/Hair_03.png" id="003">
 								<img src="img/avatar/Hair_04.png" id="004">
-							</div> 
+							</div>
 						</div>
 						<div class="container-outer">
 							<div class="container-inner eye">
@@ -162,7 +163,7 @@
 								<img src="img/avatar/Eye_07.png" id="007">
 								<img src="img/avatar/Eye_08.png" id="008">
 								<img src="img/avatar/Eye_09.png" id="016">
-							</div> 
+							</div>
 						</div>
 						<div class="container-outer">
 							<div class="container-inner badge">
@@ -170,33 +171,33 @@
 								<img src="img/avatar/Badge_10.png"  id="010">
 								<img src="img/avatar/Badge_11.png"  id="011">
 								<img src="img/avatar/Badge_12.png"  id="012">
-							</div> 
+							</div>
 						</div>
-						
+
 						<button id="saveavatar"> Submit </button>
 
 						<a href="Earth.html" class="endanimation">
 							<img src="img/avatar/Rocketship.png" id="endanimationphoto">
 							<h3 id="endanimationtext"> Blast Off!  </h3>
-						</a>	
+						</a>
 					</div>
 
 				</div>
 			</div>
 
 			<footer class="navbar-fixed-bottom">
-					
+
 				<a href="IndividualtoInfinity.html" >
 					<img src="img/navbar/LeftArrow.png" id="leftbutton">
 				</a>
-				
-				<a href="Earth.html" > 
+
+				<a href="Earth.html" >
 					<img src="img/navbar/RightArrow.png" id="rightbutton">
 				</a>
-				
+
 				<h3> Prepare to travel through space by creating your intergalactic passport. </h3>
 
-				
+
 			</footer>
 
 
@@ -205,9 +206,9 @@
 	</div>
 
 
- 	
 
-	
+
+
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
