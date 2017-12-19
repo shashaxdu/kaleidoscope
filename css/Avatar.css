@@ -9,26 +9,16 @@ body{
     background-attachment: scroll;
     background-position: center; n
 	background-size: cover;
-	
+
 }
 CAN COPY AND PASTE from Body to Footer h3 into every page*/
-body{
-}
-
- a{
- 	color:white;
- }
 
 h1{
-	color:white;
 	font-size: 50px;
-	font-style: normal;
 	font-weight: normal;
-	font-family: 'Quicksand', sans-serif;
 }
 
 h2{
-	color: white;
 	font-size: 24px;
 	font-family: 'Josefin Sans', sans-serif;
 	/*FontFamily should be Avenir--This is Second Header*/
@@ -37,23 +27,15 @@ h2{
 h3{
 	color: black;
 	font-size: 20px;
-font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	/*Body Text*/
 }
-
-footer h3{
-		font-size: 16px;
-		color:white;
-	font-style: normal;
-	font-weight: normal;
-
-	}
 
 #fixed-bg {
     /* The background image */
    z-index: -1;
 	background-image: url(../img/background/Earth_Natural_Blue.jpg);
-    /* Set a specified height, or the minimum height for the background image 
+    /* Set a specified height, or the minimum height for the background image
     min-height: 100px;*/
 
    /* Set background image to fixed (don't scroll along with the page) */
@@ -73,12 +55,6 @@ footer h3{
 	z-index: 0;
 
 }
-
-.navbarleft{
-	position: absolute;
-	margin-left: 45px;
-}
-
 
 #Me_Nav_Icon{
 	position: absolute;
@@ -102,13 +78,13 @@ footer h3{
 	position: absolute;
 	width: 50px;
 	top: 350px;
-} 
+}
 
 #ObUniv_Nav_Icon{
 	position: absolute;
 	width: 50px;
 	top: 450px;
-} 
+}
 
 #Infinity_Nav_Icon {
 	position: absolute;
@@ -116,16 +92,11 @@ footer h3{
 	top: 550px;
 }
 
-header{
-	padding:30px;
-	padding-top: 20px;	
-}
-
 /********************************************/
 
 
 #tarjeta {
-	
+
 	position: fixed;
 	left: 30%;
 	top: 280px;
@@ -168,7 +139,7 @@ input[type=text], select {
 		color: black;
 		text-align: left;
 		padding-left: 10px;
-		padding-right: 10px;	
+		padding-right: 10px;
 }
 
 #tarjeta img{
@@ -274,7 +245,7 @@ div#page2_avatarcreator {
 .container-inner{
 	margin: 3px 5px 0 5px;
 	background-color: rgba(0, 0, 0, 0);
-	
+
 }
 
 .container-inner img {
@@ -421,10 +392,10 @@ top: 5px;
 	font-family: 'Josefin Sans', sans-serif;
 	color: black;
 	text-align: center;
-	
+
 	padding-left: 10px;
-	padding-right: 10px;	
-	
+	padding-right: 10px;
+
 	visibility: hidden;
 }
 
@@ -441,12 +412,6 @@ top: 5px;
 
 }
 
-#endanimationphoto{
-	width: 50px;
-	margin-left: 8px;
-}
-
-
 #quote h3 {
 	margin-top: 100px;
 	text-align: center;
@@ -461,50 +426,4 @@ top: 5px;
 	font-style: normal;
 	font-weight: normal;
 	font-family: 'Josefin Sans', sans-serif;
-}
-
-/********************************************/
-footer {
-	/*background-color: #FFFFFF;*/
-	text-align: center;
-	opacity: 0.6;
-	padding-bottom:25px;
-	}
-
-#footertext{
-width: 650px;
-margin-left:380px;
-position: absolute;
-bottom: 20px;
-}
-
-a#leftbutton {
-	
-	padding: 10px 50px 10px 30px; 
-	/*background-color: #9C9BAB;
-	border-radius: 25px;*/
-}
-
-#leftbutton{
-	position: fixed;
-	left: 300px;
-	bottom:10px;
-	width:50px;
-
-}
-
-a#rightbutton {
-
-	padding: 10px 30px 10px 50px; 
-	
-	/*background-color: #9C9BAB;
-	border-radius: 25px;*/
-}
-
-#rightbutton{
-	width:50px;
-
-	position: fixed;
-	right: 300px;
-	bottom: 10px;
 }

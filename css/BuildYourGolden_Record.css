@@ -1,26 +1,11 @@
 @charset "UTF-8";
 /* CSS Document */
 
-
-body{
-	background: black;
-	
-}
-
 #fixed-bg {
     /* The background image */
     background-image: url(../img/background/Golden_Record.jpg);
     /* Set a specified height, or the minimum height for the background image */
     min-height: 900px;
-    /* Set background image to fixed (don't scroll along with the page) */
-    background-attachment: fixed;
-    /* Center the background image */
-    background-position: center;
-    /* Set the background image to no repeat */
-    background-repeat: no-repeat;
-    /* Scale the background image to be as large as possible */
-    background-size: cover;
-    z-index: 1
 }
 
 #screen{
@@ -29,19 +14,6 @@ body{
 	min-height: 900px;
 	z-index: 2;
 
-}
- a{
- 	color:white;
- }
-
-header{
-	padding:30px;
-	padding-top: 20px;	
-}
-
-.navbarleft{
-	position: absolute;
-	margin-left: 45px;
 }
 
 
@@ -67,13 +39,13 @@ header{
 	position: absolute;
 	width: 50px;
 	top: 350px;
-} 
+}
 
 #ObUniv_Nav_Icon{
 	position: absolute;
 	width: 50px;
 	top: 450px;
-} 
+}
 
 #Infinity_Nav_Icon {
 	position: absolute;
@@ -84,52 +56,28 @@ header{
 #person{
 	position:absolute;
 	align-content: center;
-	margin: 190px 120px 0px 200px;	
+	margin: 190px 120px 0px 200px;
 }
 
 #infinity {
 	position:absolute;
 	align-content: center;
-	margin: 190px 120px 0px 465px;	
+	margin: 190px 120px 0px 465px;
 }
-
-h1{
-	color:white;
-	font-size: 50px;
-	font-style: normal;
-	font-weight: normal;
-	font-family: 'Quicksand', sans-serif;
-
-}
-
-h2{
-	font-size: 24px;
-	font-family: 'Josefin Sans', sans-serif;
-	color: white;
-}
-
 
 
 h3{
 	font-size: 13px;
-font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	color: black;
 }
-
-footer h3{
-		font-size: 16px;
-		color:white;
-	font-style: normal;
-	font-weight: normal;
-
-	}
-
 
 #iconcontainer{
 	position: fixed;
 	top: 220px;
 	left: 260px;
 }
+
 .icon {
 	width: 120px;
 	height: 130px;
@@ -170,11 +118,6 @@ margin-top: 150px
 	font-weight: 500px;
 	color: white;
 
-}
-
-#endanimationphoto{
-	width: 50px;
-	margin-left: 8px;
 }
 
  .create {
@@ -353,7 +296,7 @@ width: 620px;
 }
 
 #waves h2 {
-	font-size: 18px; 
+	font-size: 18px;
 	margin: 20px 0 0 10px;
 }
 
@@ -407,47 +350,4 @@ width: 620px;
 }
 
 
-footer {
-	/*background-color: #FFFFFF;*/
-	text-align: center;
-	opacity: 0.6;
-	padding-bottom:25px;
-	}
 
-#footertext{
-width: 650px;
-margin-left:380px;
-position: absolute;
-bottom: 20px;
-}
-
-a#leftbutton {
-	
-	padding: 10px 50px 10px 30px; 
-	/*background-color: #9C9BAB;
-	border-radius: 25px;*/
-}
-
-#leftbutton{
-	position: fixed;
-	left: 300px;
-	bottom:10px;
-	width:50px;
-
-}
-
-a#rightbutton {
-
-	padding: 10px 30px 10px 50px; 
-	
-	/*background-color: #9C9BAB;
-	border-radius: 25px;*/
-}
-
-#rightbutton{
-	width:50px;
-
-	position: fixed;
-	right: 300px;
-	bottom: 10px;
-}

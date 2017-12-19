@@ -3,11 +3,6 @@
 
 
 /* Backgrounds */
-
-body{
-    background-color: black;
-}
-
 a{
  	color:white;
 }
@@ -88,7 +83,7 @@ a{
 #person:hover {
 	width: 16vmax;
 }
- 
+
 #infinity:hover {
 	width: 16vmax;
 }
@@ -176,7 +171,7 @@ input[type=text], select {/*form fields on passport.*/
 		color: black;
 		text-align: left;
 		padding-left: 10px;
-		padding-right: 10px;	
+		padding-right: 10px;
 }*/
 
 #tarjeta img{ /*Blank Avatar Image*/
@@ -426,10 +421,10 @@ top: 5px;
 	font-family: 'Josefin Sans', sans-serif;
 	color: black;
 	text-align: center;
-	
+
 	padding-left: 10px;
-	padding-right: 10px;	
-	
+	padding-right: 10px;
+
 	visibility: hidden;
 }
 
@@ -444,145 +439,4 @@ top: 5px;
 	font-weight: 500px;
 	color: white;
 
-}
-
-#endanimationphoto{
-	width: 50px;
-	margin-left: 8px;
-}
-
-
-/* Shared CSS Attributes - all pages */
-
-.navbar-fixed-left {
-  position: fixed;
-	padding-left: 2.5%;
-	padding-top: 180px;
-}
-
-.navbarleft {
-  display: block;
-	padding-bottom: 3vh;
-}
-
-.navbarleft img {
-  width: 50px;
-}
-
-#images {
-  height: 80vh;
-  display:flex;
-  justify-content: space-around;
-  align-items:center;
-}
-
-@media (min-width: 600px) {
-  #images {
-    height: 50vh;
-  }
-}
-
-@media (min-width: 600px) {/*Vertically align images*/
-	#images {
-		height: 50vh;
-	}
-}
-
-header1{
-	position: fixed;
-	padding-top: 10px;
-	padding-left: 3%;
-	z-index: 4;
-}
-
-header2{
-	position: fixed;
-	padding-top: 75px;
-	padding-left: 3%;
-}
-
-a{
- 	color:white;
- }
-
-h1{
-	color:white;
-	font-size: 3.5em;
-	font-style: normal;
-	font-family: 'Quicksand', sans-serif;
-}
-
-h2{
-	color: white;
-	font-size: 1.6em;
-	font-weight: 100;
-	font-family: 'Josefin Sans', sans-serif;
-}
-
-h3{ /*bottom Intro text*/
-	color: white;
-	font-size: 2.5vmin;
-	line-height: 1.4em;
-	font-family: 'Open Sans', sans-serif;
-	letter-spacing: 1px;
-	text-align: center;
-}
-
-h4{ /*pop-up text*/
-	color: white;
-	font-size: 2vmin;
-	line-height: 1.2em;
-	font-family: 'Open Sans', sans-serif;
-	letter-spacing: 1px;
-	text-align: right;
-}
-
-#intro { /*bottom Intro text*/
-	text-align: center;
-	font-style: normal;
-	font-weight: normal;
-    bottom: 5%;
-	position: absolute;
-	z-index: 3;
-}
-
-
-/* Footer */
-
-/*footer h3{
-	color: white;
-	font-size: 2.5vmin;
-	line-height: 1.4em;
-	font-family: 'Open Sans', sans-serif;
-	letter-spacing: 1px; 
-	text-align: center;
-}*/
-
-footer {
-	text-align: center;
-	padding-bottom:1.8%;
-	}
-
-/*#footertext{
-	width: 70vw;
-	position: absolute;
-	bottom: 1%;
-	z-index: 3;
-}*/
-
-
-/* Horizontal Bottom Navbar - all pages sans Index */
-
-#leftbutton{
-	position: fixed;
-	left: 2.5%;
-	bottom:15px;
-	width:40px;
-}
-
-#rightbutton{
-	position: fixed;
-	right: 2.5%;
-	bottom: 15px;
-	width: 40px;
 }

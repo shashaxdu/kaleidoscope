@@ -2,36 +2,10 @@
 /* CSS Document */
 
 
-body{
-	background: black;
-	
-}
-
 .fixed-bg {
     /* The background image */
     background-image: url(../img/background/about.jpg);
-    /* Set a specified height, or the minimum height for the background image 
-    min-height: 850px;
-    /* Set background image to fixed (don't scroll along with the page) */
-    background-attachment: fixed;
-    /* Center the background image */
-    background-position: center;
-    /* Set the background image to no repeat */
-    background-repeat: no-repeat;
-    /* Scale the background image to be as large as possible */
-    background-size: cover;
 }
-
-header{
-	padding:30px;
-	padding-top: 20px;	
-}
-
-.navbarleft{
-	position: absolute;
-	margin-left: 45px;
-}
-
 
 #Me_Nav_Icon{
 	position: absolute;
@@ -55,13 +29,13 @@ header{
 	position: absolute;
 	width: 50px;
 	top: 350px;
-} 
+}
 
 #ObUniv_Nav_Icon{
 	position: absolute;
 	width: 50px;
 	top: 450px;
-} 
+}
 
 #Infinity_Nav_Icon {
 	position: absolute;
@@ -72,13 +46,13 @@ header{
 #person{
 	position:absolute;
 	align-content: center;
-	margin: 190px 120px 0px 200px;	
+	margin: 190px 120px 0px 200px;
 }
 
 #infinity {
 	position:absolute;
 	align-content: center;
-	margin: 190px 120px 0px 465px;	
+	margin: 190px 120px 0px 465px;
 }
 
 #text {
@@ -91,27 +65,16 @@ header{
 	}
 
 h1{
-	color:white;
 	font-size: 50px;
-	font-style: normal;
 	font-weight: normal;
-	font-family: 'Quicksand', sans-serif;
-
 }
- a{
- 	color:white;
- }
- 
+
 h2{
 	font-size: 24px;
 	font-family: 'Josefin Sans', sans-serif;
-	color: white;
 }
 
-
-
 h3{
-	color: white;
 	font-size: 14px;
 	font-family: 'Montserrat', sans-serif;
 	/*Body Text*/
@@ -137,53 +100,7 @@ button{
 
 
 footer h3{
-		font-size: 12px;
+	font-size: 12px;
 	font-style: normal;
 	font-weight: normal;
-
-	}
-
-footer {
-	/*background-color: #FFFFFF;*/
-	text-align: center;
-	opacity: 0.6;
-	padding-bottom:25px;
-	}
-
-#footertext{
-width: 650px;
-margin-left:380px;
-position: absolute;
-bottom: 20px;
-}
-
-a#leftbutton {
-	
-	padding: 10px 50px 10px 30px; 
-	/*background-color: #9C9BAB;
-	border-radius: 25px;*/
-}
-
-#leftbutton{
-	position: fixed;
-	left: 300px;
-	bottom:10px;
-	width:50px;
-
-}
-
-a#rightbutton {
-
-	padding: 10px 30px 10px 50px; 
-	
-	/*background-color: #9C9BAB;
-	border-radius: 25px;*/
-}
-
-#rightbutton{
-	width:50px;
-
-	position: fixed;
-	right: 300px;
-	bottom: 10px;
 }
