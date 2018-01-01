@@ -58,26 +58,10 @@
 	margin: 190px 120px 0px 465px;	
 }
 
-h1{
-	color:white;
-	font-size: 50px;
-	font-style: normal;
-	font-weight: normal;
-	font-family: 'Quicksand', sans-serif;
-
-}
-
-h2{
-	font-size: 24px;
-	font-family: 'Josefin Sans', sans-serif;
-	color: white;
-}
 
 h3{
-	color: white;
 	font-size: 16px;
-font-family: 'Montserrat', sans-serif;
-z-index: 1;
+	z-index: 1;
 	/*Body Text*/
 }
 

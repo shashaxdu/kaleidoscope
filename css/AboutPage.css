@@ -64,31 +64,6 @@
 	margin: 0px 0 40px;
 	}
 
-h1{
-	color:white;
-	font-size: 50px;
-	font-style: normal;
-	font-weight: normal;
-	font-family: 'Quicksand', sans-serif;
-
-}
- 
-h2{
-	font-size: 24px;
-	font-family: 'Josefin Sans', sans-serif;
-	color: white;
-}
-
-
-
-h3{
-	color: white;
-	font-size: 14px;
-	font-family: 'Montserrat', sans-serif;
-	/*Body Text*/
-}
-
-
 img{
 	border-radius: 80px;
 }

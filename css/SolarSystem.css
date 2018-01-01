@@ -45,32 +45,16 @@
 	top: 550px;
 }
 
-h1{
-	color:white;
-	font-size: 50px;
+h2{ /* RKW */
 	font-style: normal;
-	font-weight: normal;
-	font-family: 'Quicksand', sans-serif;
-
-}
-
-h2{
-	font-size: 24px;
-	font-family: 'Josefin Sans', sans-serif;
-	color: white;
-		font-style: normal;
 	font-weight: normal;
 }
 
 
 
 h3{
-	color: white;
-	font-size: 14px;
-font-family: 'Montserrat', sans-serif;
 	font-style: normal;
 	font-weight: normal;
-
 }
 
 footer h3{ /* RKW */

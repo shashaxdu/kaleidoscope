@@ -485,22 +485,16 @@ header2{
 	padding-left: 3%;
 }
 
-h1{
-	color:white;
+h1{ /* RKW */
 	font-size: 3.5em;
-	font-style: normal;
-	font-family: 'Quicksand', sans-serif;
 }
 
-h2{
-	color: white;
+h2{ /* RKW */
 	font-size: 1.6em;
 	font-weight: 100;
-	font-family: 'Josefin Sans', sans-serif;
 }
 
 h3{ /*bottom Intro text*/
-	color: white;
 	font-size: 2.5vmin;
 	line-height: 1.4em;
 	font-family: 'Open Sans', sans-serif;
