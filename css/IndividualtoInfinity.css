@@ -4,27 +4,11 @@
 
 /* Backgrounds */
 
-body{
-    background-color: black;
-}
-
-a{
- 	color:white;
-}
-
 .fixed-bg-index {
     /* The background image for the Index page */
     background-image: url(../img/background/Milky_Way.jpg);
     /* Set a specified height, or the minimum height for the background image */
     min-height:100vh;
-    /* Set background image to fixed (don't scroll along with the page) */
-    background-attachment: fixed;
-    /* Center the background image */
-    background-position: center;
-    /* Set the background image to no repeat */
-    background-repeat: no-repeat;
-    /* Scale the background image to be as large as possible */
-    background-size: cover;
 }
 
 .fixed-bg-earth {
@@ -460,8 +444,8 @@ top: 5px;
 	padding-top: 180px;
 }
 
-.navbarleft {
-  display: block;
+.navbarleft { /* RKW */
+  	display: block;
 	padding-bottom: 3vh;
 }
 
@@ -500,10 +484,6 @@ header2{
 	padding-top: 75px;
 	padding-left: 3%;
 }
-
-a{
- 	color:white;
- }
 
 h1{
 	color:white;
@@ -558,10 +538,9 @@ h4{ /*pop-up text*/
 	text-align: center;
 }*/
 
-footer {
-	text-align: center;
+footer { /* RKW */
 	padding-bottom:1.8%;
-	}
+}
 
 /*#footertext{
 	width: 70vw;
@@ -573,15 +552,14 @@ footer {
 
 /* Horizontal Bottom Navbar - all pages sans Index */
 
-#leftbutton{
-	position: fixed;
+#leftbutton{ /* RKW */
+
 	left: 2.5%;
 	bottom:15px;
 	width:40px;
 }
 
-#rightbutton{
-	position: fixed;
+#rightbutton{ /* RKW */
 	right: 2.5%;
 	bottom: 15px;
 	width: 40px;

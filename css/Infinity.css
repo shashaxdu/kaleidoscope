@@ -2,39 +2,12 @@
 /* CSS Document */
 
 
-body{
-	background: black;
-	
-}
-
- a{
- 	color:white;
- }
 .fixed-bg {
     /* The background image */
   background-image: url(../img/background/Infinity_3_Gradients.png);
     /* Set a specified height, or the minimum height for the background image */
     min-height: 850px;
-    /* Set background image to fixed (don't scroll along with the page) */
-    background-attachment: fixed;
-    /* Center the background image */
-    background-position: center;
-    /* Set the background image to no repeat */
-    background-repeat: no-repeat;
-    /* Scale the background image to be as large as possible */
-    background-size: cover;
 }
-
-header{
-	padding:30px;
-	padding-top: 20px;	
-}
-
-.navbarleft{
-	position: absolute;
-	margin-left: 45px;
-}
-
 
 #Me_Nav_Icon{
 	position: absolute;
@@ -200,48 +173,7 @@ button {
 
 }
 
-footer {
-	/*background-color: #FFFFFF;*/
-	text-align: center;
-	opacity: 0.6;
-	padding-bottom:25px;
-	}
-
-#footertext{
-width: 690px;
-margin-left:380px;
-position: absolute;
-bottom: 10px;
-text-align: center;
-}
-
-a#leftbutton {
-	
-	padding: 10px 50px 10px 30px; 
-	/*background-color: #9C9BAB;
-	border-radius: 25px;*/
-}
-
-#leftbutton{
-	position: fixed;
-	left: 300px;
-	bottom:10px;
-	width:50px;
-
-}
-
-a#rightbutton {
-
-	padding: 10px 30px 10px 50px; 
-	
-	/*background-color: #9C9BAB;
-	border-radius: 25px;*/
-}
-
-#rightbutton{
-	width:50px;
-
-	position: fixed;
-	right: 300px;
+#footertext{ /* RKW */
 	bottom: 10px;
+	text-align: center;
 }

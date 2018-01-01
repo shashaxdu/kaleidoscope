@@ -1,13 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 
-
-body{
-	background: black;
-	
-}
-
-#fixed-bg {
+#fixed-bg { /* RKW */
     /* The background image */
     background-image: url(../img/background/Golden_Record.jpg);
     /* Set a specified height, or the minimum height for the background image */
@@ -30,20 +24,6 @@ body{
 	z-index: 2;
 
 }
- a{
- 	color:white;
- }
-
-header{
-	padding:30px;
-	padding-top: 20px;	
-}
-
-.navbarleft{
-	position: absolute;
-	margin-left: 45px;
-}
-
 
 #Me_Nav_Icon{
 	position: absolute;
@@ -112,17 +92,14 @@ h2{
 
 h3{
 	font-size: 13px;
-font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	color: black;
 }
 
 footer h3{
-		font-size: 16px;
-		color:white;
-	font-style: normal;
-	font-weight: normal;
-
-	}
+	font-size: 16px;
+	color:white;
+}
 
 
 #iconcontainer{
@@ -404,50 +381,4 @@ width: 620px;
 	color: black;
 	margin: 15px 0 0 580px;
 	border-width: 0px;
-}
-
-
-footer {
-	/*background-color: #FFFFFF;*/
-	text-align: center;
-	opacity: 0.6;
-	padding-bottom:25px;
-	}
-
-#footertext{
-width: 650px;
-margin-left:380px;
-position: absolute;
-bottom: 20px;
-}
-
-a#leftbutton {
-	
-	padding: 10px 50px 10px 30px; 
-	/*background-color: #9C9BAB;
-	border-radius: 25px;*/
-}
-
-#leftbutton{
-	position: fixed;
-	left: 300px;
-	bottom:10px;
-	width:50px;
-
-}
-
-a#rightbutton {
-
-	padding: 10px 30px 10px 50px; 
-	
-	/*background-color: #9C9BAB;
-	border-radius: 25px;*/
-}
-
-#rightbutton{
-	width:50px;
-
-	position: fixed;
-	right: 300px;
-	bottom: 10px;
 }

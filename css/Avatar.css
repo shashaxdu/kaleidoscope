@@ -7,19 +7,12 @@ body{
 	background-image: url(img/andomeda.jpeg);
 	background-repeat: no-repeat;
     background-attachment: scroll;
-    background-position: center; n
+    background-position: center;
 	background-size: cover;
-	
 }
 CAN COPY AND PASTE from Body to Footer h3 into every page*/
-body{
-}
 
- a{
- 	color:white;
- }
-
-h1{
+h1{ /* ******/
 	color:white;
 	font-size: 50px;
 	font-style: normal;
@@ -42,12 +35,9 @@ font-family: 'Montserrat', sans-serif;
 }
 
 footer h3{
-		font-size: 16px;
-		color:white;
-	font-style: normal;
-	font-weight: normal;
-
-	}
+	font-size: 16px;
+	color:white;
+}
 
 #fixed-bg {
     /* The background image */
@@ -73,12 +63,6 @@ footer h3{
 	z-index: 0;
 
 }
-
-.navbarleft{
-	position: absolute;
-	margin-left: 45px;
-}
-
 
 #Me_Nav_Icon{
 	position: absolute;
@@ -114,11 +98,6 @@ footer h3{
 	position: absolute;
 	width: 50px;
 	top: 550px;
-}
-
-header{
-	padding:30px;
-	padding-top: 20px;	
 }
 
 /********************************************/
@@ -461,50 +440,4 @@ top: 5px;
 	font-style: normal;
 	font-weight: normal;
 	font-family: 'Josefin Sans', sans-serif;
-}
-
-/********************************************/
-footer {
-	/*background-color: #FFFFFF;*/
-	text-align: center;
-	opacity: 0.6;
-	padding-bottom:25px;
-	}
-
-#footertext{
-width: 650px;
-margin-left:380px;
-position: absolute;
-bottom: 20px;
-}
-
-a#leftbutton {
-	
-	padding: 10px 50px 10px 30px; 
-	/*background-color: #9C9BAB;
-	border-radius: 25px;*/
-}
-
-#leftbutton{
-	position: fixed;
-	left: 300px;
-	bottom:10px;
-	width:50px;
-
-}
-
-a#rightbutton {
-
-	padding: 10px 30px 10px 50px; 
-	
-	/*background-color: #9C9BAB;
-	border-radius: 25px;*/
-}
-
-#rightbutton{
-	width:50px;
-
-	position: fixed;
-	right: 300px;
-	bottom: 10px;
 }

@@ -1,39 +1,12 @@
 @charset "UTF-8";
 /* CSS Document */
 
-
-body{
-	background: black;
-	
-}
- a{
- 	color:white;
- }
 .fixed-bg {
     /* The background image */
    background-image: url(../img/background/Observable_Universe.png);
     /* Set a specified height, or the minimum height for the background image */
     min-height: 850px;
-    /* Set background image to fixed (don't scroll along with the page) */
-    background-attachment: fixed;
-    /* Center the background image */
-    background-position: center;
-    /* Set the background image to no repeat */
-    background-repeat: no-repeat;
-    /* Scale the background image to be as large as possible */
-    background-size: cover;
 }
-
-header{
-	padding:30px;
-	padding-top: 20px;	
-}
-
-.navbarleft{
-	position: absolute;
-	margin-left: 45px;
-}
-
 
 #Me_Nav_Icon{
 	position: absolute;
@@ -109,13 +82,10 @@ z-index: 1;
 }
 
 
-footer h3{
-		font-size: 16px;
-		color:white;
-	font-style: normal;
-	font-weight: normal;
-
-	}
+footer h3{ /* RKW */
+	font-size: 16px;
+	color:white;
+}
 
 #text{
 	visibility: hidden;
@@ -192,50 +162,8 @@ text-align: center;
 
 }
 
-}
-
-footer {
-	/*background-color: #FFFFFF;*/
+#footertext{ /* RKW */
+	width: 670px;
+	bottom: 15px;
 	text-align: center;
-	opacity: 0.6;
-	padding-bottom:25px;
-	}
-
-#footertext{
-width: 670px;
-margin-left:380px;
-position: absolute;
-bottom: 15px;
-text-align: center;
-}
-
-a#leftbutton {
-	
-	padding: 10px 50px 10px 30px; 
-	/*background-color: #9C9BAB;
-	border-radius: 25px;*/
-}
-
-#leftbutton{
-	position: fixed;
-	left: 300px;
-	bottom:10px;
-	width:50px;
-
-}
-
-a#rightbutton {
-
-	padding: 10px 30px 10px 50px; 
-	
-	/*background-color: #9C9BAB;
-	border-radius: 25px;*/
-}
-
-#rightbutton{
-	width:50px;
-
-	position: fixed;
-	right: 300px;
-	bottom: 10px;
 }
