@@ -1,0 +1,162 @@
+body{
+	background: black;
+}
+
+.fixed-bg {
+    /* Set a specified height, or the minimum height for the background image 
+    min-height: 850px;
+    /* Set background image to fixed (don't scroll along with the page) */
+    background-attachment: fixed;
+    /* Center the background image */
+    background-position: center;
+    /* Set the background image to no repeat */
+    background-repeat: no-repeat;
+    /* Scale the background image to be as large as possible */
+    background-size: cover;
+}
+
+a{
+    color:white;
+}
+
+header{
+	padding:30px;
+	padding-top: 20px;	
+}
+
+.navbarleft{
+	/* position: absolute; */
+    margin-left: 45px; 
+    display: block;
+    padding-bottom: 3vh;
+}
+
+.navbar-fixed-left {
+    position: fixed;
+    padding-left: 2.5%;
+    /* padding-top: 180px; */
+}
+
+/*****/
+
+h1{
+	color:white;
+	font-size: 50px;
+	font-style: normal;
+	font-weight: normal;
+	font-family: 'Quicksand', sans-serif;
+}
+ 
+h2{
+	font-size: 24px;
+	font-family: 'Josefin Sans', sans-serif;
+	color: white;
+}
+
+
+
+h3{
+	color: white;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+	/*Body Text*/
+}
+
+/*****/
+
+
+
+
+
+footer h3{
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+footer {
+/*background-color: #FFFFFF;*/
+text-align: center;
+opacity: 0.6;
+padding-bottom:25px;
+}
+
+#footertext{
+width: 650px;
+margin-left:380px;
+position: absolute;
+bottom: 20px;
+}
+
+a#leftbutton {
+
+padding: 10px 50px 10px 30px; 
+/*background-color: #9C9BAB;
+border-radius: 25px;*/
+}
+
+/* Horizontal Bottom Navbar - all pages sans Index */
+
+#leftbutton{
+position: fixed;
+left: 300px;
+bottom:10px;
+width:50px;
+
+}
+
+a#rightbutton {
+    padding: 10px 30px 10px 50px; 
+    z-index: 1;
+}
+
+#rightbutton{
+width:50px;
+
+position: fixed;
+right: 300px;
+bottom: 10px;
+}
+
+
+/** NAVBAR IDS **/
+
+#Me_Nav_Icon{
+	width: 50px;
+}
+
+#Earth_Nav_Icon{
+	width: 50px;
+}
+
+#SolarSystem_Nav_Icon{
+	width: 50px;
+}
+
+#MilkyWay_Nav_Icon{
+	width: 50px;
+} 
+
+#ObUniv_Nav_Icon{
+	width: 50px;
+} 
+
+#Infinity_Nav_Icon {
+	width: 50px;
+}
+
+/** END NAVBAR IDS **/
+
+/* OTHER COMMON IDS */
+
+#person{
+	position:absolute;
+	align-content: center;
+	margin: 190px 120px 0px 200px;	
+}
+
+#infinity {
+	position:absolute;
+	align-content: center;
+	margin: 190px 120px 0px 465px;	
+}

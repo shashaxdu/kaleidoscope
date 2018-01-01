@@ -4,27 +4,11 @@
 
 /* Backgrounds */
 
-body{
-    background-color: black;
-}
-
-a{
- 	color:white;
-}
-
 .fixed-bg-index {
     /* The background image for the Index page */
     background-image: url(../img/background/Milky_Way.jpg);
     /* Set a specified height, or the minimum height for the background image */
     min-height:100vh;
-    /* Set background image to fixed (don't scroll along with the page) */
-    background-attachment: fixed;
-    /* Center the background image */
-    background-position: center;
-    /* Set the background image to no repeat */
-    background-repeat: no-repeat;
-    /* Scale the background image to be as large as possible */
-    background-size: cover;
 }
 
 .fixed-bg-earth {
@@ -455,15 +439,15 @@ top: 5px;
 /* Shared CSS Attributes - all pages */
 
 .navbar-fixed-left {
-  position: fixed;
+  	position: fixed;
 	padding-left: 2.5%;
 	padding-top: 180px;
 }
 
-.navbarleft {
-  display: block;
+/* .navbarleft { /* RKW 
+  	display: block;
 	padding-bottom: 3vh;
-}
+} */
 
 .navbarleft img {
   width: 50px;
@@ -501,26 +485,16 @@ header2{
 	padding-left: 3%;
 }
 
-a{
- 	color:white;
- }
-
-h1{
-	color:white;
+h1{ /* RKW */
 	font-size: 3.5em;
-	font-style: normal;
-	font-family: 'Quicksand', sans-serif;
 }
 
-h2{
-	color: white;
+h2{ /* RKW */
 	font-size: 1.6em;
 	font-weight: 100;
-	font-family: 'Josefin Sans', sans-serif;
 }
 
 h3{ /*bottom Intro text*/
-	color: white;
 	font-size: 2.5vmin;
 	line-height: 1.4em;
 	font-family: 'Open Sans', sans-serif;
@@ -558,10 +532,9 @@ h4{ /*pop-up text*/
 	text-align: center;
 }*/
 
-footer {
-	text-align: center;
+footer { /* RKW */
 	padding-bottom:1.8%;
-	}
+}
 
 /*#footertext{
 	width: 70vw;
@@ -573,15 +546,14 @@ footer {
 
 /* Horizontal Bottom Navbar - all pages sans Index */
 
-#leftbutton{
-	position: fixed;
+#leftbutton{ /* RKW */
+
 	left: 2.5%;
 	bottom:15px;
 	width:40px;
 }
 
-#rightbutton{
-	position: fixed;
+#rightbutton{ /* RKW */
 	right: 2.5%;
 	bottom: 15px;
 	width: 40px;
