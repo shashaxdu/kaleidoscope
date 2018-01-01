@@ -8,18 +8,6 @@
     min-height: 850px;
 }
 
-#person{
-	position:absolute;
-	align-content: center;
-	margin: 190px 120px 0px 200px;	
-}
-
-#infinity {
-	position:absolute;
-	align-content: center;
-	margin: 190px 120px 0px 465px;	
-}
-
 h3{
 	color: black;
 }

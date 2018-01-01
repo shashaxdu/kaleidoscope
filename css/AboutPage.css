@@ -6,18 +6,6 @@
 	background-image: url(../img/background/about.jpg);
 }
 
-#person{
-	position:absolute;
-	align-content: center;
-	margin: 190px 120px 0px 200px;	
-}
-
-#infinity {
-	position:absolute;
-	align-content: center;
-	margin: 190px 120px 0px 465px;	
-}
-
 #text {
 	margin: 150px 0 40px;
 	font-size: 15px;

@@ -106,12 +106,8 @@ width:50px;
 }
 
 a#rightbutton {
-
-padding: 10px 30px 10px 50px; 
-z-index: 1;
-
-/*background-color: #9C9BAB;
-border-radius: 25px;*/
+    padding: 10px 30px 10px 50px; 
+    z-index: 1;
 }
 
 #rightbutton{
@@ -150,3 +146,17 @@ bottom: 10px;
 }
 
 /** END NAVBAR IDS **/
+
+/* OTHER COMMON IDS */
+
+#person{
+	position:absolute;
+	align-content: center;
+	margin: 190px 120px 0px 200px;	
+}
+
+#infinity {
+	position:absolute;
+	align-content: center;
+	margin: 190px 120px 0px 465px;	
+}
