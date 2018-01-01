@@ -9,42 +9,6 @@
     min-height: 850px;
 }
 
-#Me_Nav_Icon{
-	position: absolute;
-	width: 50px;
-	top: 50px;
-}
-
-#Earth_Nav_Icon{
-	position: absolute;
-	width: 50px;
-	top: 150px;
-}
-
-#SolarSystem_Nav_Icon{
-	position: absolute;
-	width: 50px;
-	top: 250px;
-}
-
-#MilkyWay_Nav_Icon{
-	position: absolute;
-	width: 50px;
-	top: 350px;
-} 
-
-#ObUniv_Nav_Icon{
-	position: absolute;
-	width: 50px;
-	top: 450px;
-} 
-
-#Infinity_Nav_Icon {
-	position: absolute;
-	width: 50px;
-	top: 550px;
-}
-
 #person{
 	position:absolute;
 	align-content: center;
@@ -116,7 +80,6 @@ iframe {
 
 
 }
-
 
 #infinitytext{
 	visibility: hidden;

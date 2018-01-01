@@ -25,8 +25,16 @@ header{
 }
 
 .navbarleft{
-	position: absolute;
-	margin-left: 45px;
+	/* position: absolute; */
+    margin-left: 45px; 
+    display: block;
+    padding-bottom: 3vh;
+}
+
+.navbar-fixed-left {
+    position: fixed;
+    padding-left: 2.5%;
+    /* padding-top: 180px; */
 }
 
 /*****/
@@ -100,6 +108,7 @@ width:50px;
 a#rightbutton {
 
 padding: 10px 30px 10px 50px; 
+z-index: 1;
 
 /*background-color: #9C9BAB;
 border-radius: 25px;*/
@@ -112,3 +121,32 @@ position: fixed;
 right: 300px;
 bottom: 10px;
 }
+
+
+/** NAVBAR IDS **/
+
+#Me_Nav_Icon{
+	width: 50px;
+}
+
+#Earth_Nav_Icon{
+	width: 50px;
+}
+
+#SolarSystem_Nav_Icon{
+	width: 50px;
+}
+
+#MilkyWay_Nav_Icon{
+	width: 50px;
+} 
+
+#ObUniv_Nav_Icon{
+	width: 50px;
+} 
+
+#Infinity_Nav_Icon {
+	width: 50px;
+}
+
+/** END NAVBAR IDS **/

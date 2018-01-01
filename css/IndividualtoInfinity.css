@@ -439,15 +439,15 @@ top: 5px;
 /* Shared CSS Attributes - all pages */
 
 .navbar-fixed-left {
-  position: fixed;
+  	position: fixed;
 	padding-left: 2.5%;
 	padding-top: 180px;
 }
 
-.navbarleft { /* RKW */
+/* .navbarleft { /* RKW 
   	display: block;
 	padding-bottom: 3vh;
-}
+} */
 
 .navbarleft img {
   width: 50px;
