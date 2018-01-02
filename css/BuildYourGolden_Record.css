@@ -1,19 +1,11 @@
 @charset "UTF-8";
 /* CSS Document */
 
-#fixed-bg { /* RKW */
+.fixed-bg { /* RKW */
     /* The background image */
     background-image: url(../img/background/Golden_Record.jpg);
     /* Set a specified height, or the minimum height for the background image */
     min-height: 900px;
-    /* Set background image to fixed (don't scroll along with the page) */
-    background-attachment: fixed;
-    /* Center the background image */
-    background-position: center;
-    /* Set the background image to no repeat */
-    background-repeat: no-repeat;
-    /* Scale the background image to be as large as possible */
-    background-size: cover;
     z-index: 1
 }
 

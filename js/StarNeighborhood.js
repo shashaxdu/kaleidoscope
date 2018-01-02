@@ -15,10 +15,7 @@ $(document).ready(function(){
         }
     );
 
-
-
      $("#siriusimg").hover(function(){
-
 
         $("#sirsuntext").css("visibility", "visible");
         $("#siriustext").css("visibility", "visible");
