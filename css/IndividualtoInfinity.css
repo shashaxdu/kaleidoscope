@@ -463,19 +463,6 @@ top: 5px;
 	}
 }
 
-header1{
-	position: fixed;
-	padding-top: 10px;
-	padding-left: 3%;
-	z-index: 4;
-}
-
-header2{
-	position: fixed;
-	padding-top: 75px;
-	padding-left: 3%;
-}
-
 h1{ /* RKW */
 	font-size: 3.5em;
 }
