@@ -24,19 +24,6 @@ header{
 	padding-top: 20px;	
 }
 
-.navbarleft{
-	/* position: absolute; */
-    margin-left: 45px; 
-    display: block;
-    padding-bottom: 3vh;
-}
-
-.navbar-fixed-left {
-    position: fixed;
-    padding-left: 2.5%;
-    /* padding-top: 180px; */
-}
-
 /*****/
 
 h1{
@@ -121,8 +108,54 @@ bottom: 10px;
 
 /** NAVBAR IDS **/
 
-#Me_Nav_Icon{
+.navbar-fixed-left {
+	/* TEST */
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around; /* space-evenly */
+	align-items: center;
+	height: 60%;
+	width: 10%;
+	
+	/* TEST */
+	position: fixed;
+	padding-left: 2.5%;
+	margin-top: 180px;
+}
+
+/* .navbarleft{
+	/* position: absolute; 
+	margin-left: 45px; 
+	display: block;
+	padding-bottom: 3vh;
+} */
+
+.nav-icon {
+	/* margin-left: 45px;  */
+	/* display: block; */
+	/* padding-bottom: 3vh; */
 	width: 50px;
+	align-content: center;
+	vertical-align: center;
+}
+
+.nav-icon-img {
+	width: 100%;
+	min-width: 50px;
+	vertical-align: center;
+	-moz-transition: 0.5s ease-in-out;
+	-webkit-transition: 0.5s ease-in-out;
+	-o-transition: 0.5s ease-in-out;
+	transition: 0.5s ease-in-out;
+}
+
+.nav-icon-img:hover {
+	transform: scale(0.8, 0.8); /** default is 1, scale it to 1.5 */
+}
+
+#Me_Nav_Icon{
+	content: url("../img/navbar/SolarSystem_Nav_Icon.png");
 }
 
 #Earth_Nav_Icon{
@@ -145,7 +178,7 @@ bottom: 10px;
 	width: 50px;
 }
 
-/** END NAVBAR IDS **/
+/** END NAVBAR **/
 
 /* OTHER COMMON IDS */
 

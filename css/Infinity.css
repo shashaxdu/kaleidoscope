@@ -17,7 +17,6 @@ h3, button{
 	/*Body Text*/
 }
 
-
 footer h3{
 	font-size: 16px;
 	color:white;
@@ -34,8 +33,6 @@ footer h3{
 	  	left: 330px;
 }
 
-
-
 iframe {
 	position: fixed;
 	z-index: 1;
@@ -48,7 +45,6 @@ iframe {
 	border-width: 2px;
 	border-radius: 25px;
 	height: 480px;
-
 }
 
 #earth{
