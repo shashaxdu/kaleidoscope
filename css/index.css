@@ -3,6 +3,11 @@ body{
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
+	height: 100%;
+}
+
+html {
+	height: 100%;
 }
 
 body#home {
@@ -11,12 +16,12 @@ body#home {
 body#earth-blue {
 	background-image: url(../img/background/Earth_Natural_Blue.jpg);
 }
-body#home {
+/* body#home {
 	background-image: url(../img/background/Milky_Way.jpg);
 }
 body#home {
 	background-image: url(../img/background/Milky_Way.jpg);
-}
+} */
 
 
 /* FOOTER */
@@ -28,6 +33,7 @@ body#home {
 	display: flex;
 	align-items: center;
 	align-content: center;
+	z-index: -1;
 }
 
 .bottom-nav p {
@@ -57,7 +63,7 @@ body#home {
 } */
 
 a{
-    color:white;
+	color:white;
 }
 
 .container {
@@ -66,7 +72,12 @@ a{
 	width: 100%;
 }
 
-header{
+#home>.container {
+	height: 100%;
+}
+
+header {
+	position: fixed;
 	padding:30px;
 	padding-top: 20px;
 }
@@ -90,7 +101,6 @@ header{
 
 }
 
-
 .aboutus {
 	width: 50%;
 }
@@ -113,19 +123,12 @@ h2{
 }
 
 
-
 h3{
 	color: white;
 	font-size: 16px;
 	font-family: 'Montserrat', sans-serif;
 	/*Body Text*/
 }
-
-/*****/
-
-
-
-
 
 footer h3{ /* RKW */
     font-size: 16px;
@@ -157,11 +160,10 @@ border-radius: 25px;*/
 /* Horizontal Bottom Navbar - all pages sans Index */
 
 #leftbutton{
-position: fixed;
-left: 300px;
-bottom:10px;
-width:50px;
-
+	position: fixed;
+	left: 300px;
+	bottom:10px;
+	width:50px;
 }
 
 a#rightbutton {
@@ -170,11 +172,11 @@ a#rightbutton {
 }
 
 #rightbutton{
-width:50px;
+	width:50px;
 
-position: fixed;
-right: 300px;
-bottom: 10px;
+	position: fixed;
+	right: 300px;
+	bottom: 10px;
 }
 
 
@@ -191,6 +193,7 @@ bottom: 10px;
 	
 	position: fixed;
 	padding-left: 2.5%;
+	margin-top: 200px; /* RKW */
 }
 
 .nav-icon {
@@ -203,14 +206,23 @@ bottom: 10px;
 	width: 100%;
 	min-width: 50px;
 	vertical-align: center;
+}
+
+/* HOVER OPTIONS */
+
+.hover {
 	-moz-transition: 0.5s ease-in-out;
 	-webkit-transition: 0.5s ease-in-out;
 	-o-transition: 0.5s ease-in-out;
 	transition: 0.5s ease-in-out;
 }
 
-.nav-icon-img:hover {
+.hover-80-smaller:hover {
 	transform: scale(0.8, 0.8);
+}
+
+.hover-90-smaller:hover {
+	transform: scale(0.9, 0.9);
 }
 
 .selected {
@@ -225,17 +237,33 @@ bottom: 10px;
 
 /* OTHER COMMON IDS */
 
+
+.flex-row {
+  display: flex;
+  padding: 0;
+  width: 100%;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.flex-column {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	flex-flow: column;
+}
+
 .avatar-img {
-	min-width: 157.4px; /* RKW */
+	min-width: 10em; /* RKW */
+	max-width: 22.5em;
 	width: 100%;
 	padding: 5%;
 	align-items: center;
-	-moz-transition: 0.5s ease-in-out;
-	-webkit-transition: 0.5s ease-in-out;
-	-o-transition: 0.5s ease-in-out;
-	transition: 0.5s ease-in-out;
 }
 
-.avatar-img:hover {
-	transform: scale(0.9, 0.9);
+@media (max-width: 576px) { 
+  header {
+		padding-bottom: 0px;
+		padding-left: 2.5%;
+	}
 }
