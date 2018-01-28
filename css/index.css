@@ -1,28 +1,100 @@
 body{
 	background: black;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
 }
 
-.fixed-bg {
-    /* Set a specified height, or the minimum height for the background image 
-    min-height: 850px;
-    /* Set background image to fixed (don't scroll along with the page) */
-    background-attachment: fixed;
-    /* Center the background image */
-    background-position: center;
-    /* Set the background image to no repeat */
-    background-repeat: no-repeat;
-    /* Scale the background image to be as large as possible */
-    background-size: cover;
+body#home {
+	background-image: url(../img/background/Milky_Way.jpg);
 }
+body#earth-blue {
+	background-image: url(../img/background/Earth_Natural_Blue.jpg);
+}
+body#home {
+	background-image: url(../img/background/Milky_Way.jpg);
+}
+body#home {
+	background-image: url(../img/background/Milky_Way.jpg);
+}
+
+
+/* FOOTER */
+
+.bottom-nav {
+	height: 20%;
+	bottom: 0px;
+	position: fixed;
+	display: flex;
+	align-items: center;
+	align-content: center;
+}
+
+.bottom-nav p {
+	padding: 0;
+	color: white;
+	font-size: 16px; /* RKW */
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	z-index: 1;
+	margin-bottom: 0;
+}
+
+/* END FOOTER */
+
+/*
+.fixed-bg {
+     Set a specified height, or the minimum height for the background image 
+    min-height: 850px;
+    /* Set background image to fixed (don't scroll along with the page) 
+    background-attachment: fixed;
+    /* Center the background image 
+    background-position: center;
+    /* Set the background image to no repeat 
+    background-repeat: no-repeat;
+    /* Scale the background image to be as large as possible 
+    background-size: cover;
+} */
 
 a{
     color:white;
 }
 
+.container {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
 header{
 	padding:30px;
-	padding-top: 20px;	
+	padding-top: 20px;
 }
+
+.bottom-right {
+	position: fixed;
+	width: 10%;
+	margin: 0;
+	padding: 0;
+	bottom: 3%;
+	right: 3%;
+	z-index: 5;
+	text-align: center;
+	align-content: center;
+	font-size: 2vmin;
+
+}
+
+.bottom-right h3 {
+	margin: 0;
+
+}
+
+
+.aboutus {
+	width: 50%;
+}
+
 
 /*****/
 
@@ -44,7 +116,7 @@ h2{
 
 h3{
 	color: white;
-	font-size: 14px;
+	font-size: 16px;
 	font-family: 'Montserrat', sans-serif;
 	/*Body Text*/
 }
@@ -55,8 +127,8 @@ h3{
 
 
 
-footer h3{
-    font-size: 12px;
+footer h3{ /* RKW */
+    font-size: 16px;
     font-style: normal;
     font-weight: normal;
 }
@@ -153,14 +225,17 @@ bottom: 10px;
 
 /* OTHER COMMON IDS */
 
-#person{
-	position:absolute;
-	align-content: center;
-	margin: 190px 120px 0px 200px;	
+.avatar-img {
+	min-width: 157.4px; /* RKW */
+	width: 100%;
+	padding: 5%;
+	align-items: center;
+	-moz-transition: 0.5s ease-in-out;
+	-webkit-transition: 0.5s ease-in-out;
+	-o-transition: 0.5s ease-in-out;
+	transition: 0.5s ease-in-out;
 }
 
-#infinity {
-	position:absolute;
-	align-content: center;
-	margin: 190px 120px 0px 465px;	
+.avatar-img:hover {
+	transform: scale(0.9, 0.9);
 }

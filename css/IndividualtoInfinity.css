@@ -16,14 +16,6 @@
     background-image: url(../img/background/Earth_Moon_Sun_Bkgd.png);
     /* Set a specified height, or the minimum height for the background image */
     min-height: 100vh;
-    /* Set background image to fixed (don't scroll along with the page) */
-    background-attachment: fixed;
-    /* Center the background image */
-    background-position: center;
-    /* Set the background image to no repeat */
-    background-repeat: no-repeat;
-    /* Scale the background image to be as large as possible */
-    background-size: cover;
 }
 
 .fixed-bg-avatar {
@@ -67,6 +59,10 @@
 	bottom: 3%;
 	right: 3%;
 	z-index: 2;
+}
+
+#person:hover {
+	width: 16vmax;
 }
 
 #person:hover {
