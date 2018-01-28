@@ -1,4 +1,6 @@
-body{
+/* scss scale: % of the screen to scale all planets */
+
+body {
 	width: 100%;
 	height: 100%;
 }
@@ -22,12 +24,18 @@ html {
 .content#earth-blue {
 	background-image: url(../img/background/Earth_Natural_Blue.jpg);
 }
-/* body#home {
-	background-image: url(../img/background/Milky_Way.jpg);
+.content#solar-system {
+    /* The background image */
+    background-image: url(../img/background/SolarSystem_Bkgd.png);
+    /* Set a specified height, or the minimum height for the background image */
+		min-height: 850px;
 }
-body#home {
-	background-image: url(../img/background/Milky_Way.jpg);
-} */
+.content#earth {
+	    /* The background image */
+			background-image: url(../img/background/Earth_Moon_Sun_Bkgd.png);
+			/* Set a specified height, or the minimum height for the background image */
+			min-height: 100vh;
+} 
 
 
 /* FOOTER */
