@@ -3,6 +3,7 @@
 body {
 	width: 100%;
 	height: 100%;
+	font-size: 14px;
 }
 
 .content {
@@ -25,16 +26,10 @@ html {
 	background-image: url(../img/background/Earth_Natural_Blue.jpg);
 }
 .content#solar-system {
-    /* The background image */
-    background-image: url(../img/background/SolarSystem_Bkgd.png);
-    /* Set a specified height, or the minimum height for the background image */
-		min-height: 850px;
+	background-image: url(../img/background/SolarSystem_Bkgd.png);
 }
 .content#earth {
-	    /* The background image */
-			background-image: url(../img/background/Earth_Moon_Sun_Bkgd.png);
-			/* Set a specified height, or the minimum height for the background image */
-			min-height: 100vh;
+	background-image: url(../img/background/Earth_Moon_Sun_Bkgd.png);
 } 
 
 
@@ -47,12 +42,12 @@ html {
 	display: flex;
 	align-items: center;
 	align-content: center;
-	z-index: -1;
+	z-index: 2;
 }
 
 .bottom-nav p {
 	padding: 0;
-	font-size: 16px; /* RKW */
+	font-size: 1.2em; /* RKW */
 	font-family: 'Montserrat', sans-serif;
 	text-align: center;
 	z-index: 1;
@@ -78,6 +73,7 @@ html {
 a {
 	color:white;
 }
+
 a:hover {
 	color:white;
 }
@@ -97,6 +93,7 @@ header {
 	position: fixed;
 	padding:30px;
 	padding-top: 20px;
+	padding-left: 2.5%;
 }
 
 .bottom-right {
@@ -109,8 +106,7 @@ header {
 	z-index: 5;
 	text-align: center;
 	align-content: center;
-	font-size: 2vmin;
-
+	font-size: 1.2em;
 }
 
 .bottom-right h3 {
@@ -126,27 +122,27 @@ header {
 /*****/
 
 h1{
-	font-size: 50px;
+	font-size: 3.5em;
 	font-style: normal;
 	font-weight: normal;
 	font-family: 'Quicksand', sans-serif;
 }
  
 h2{
-	font-size: 24px;
+	font-size: 1.8em;
 	font-family: 'Josefin Sans', sans-serif;
 	
 }
 
 
 h3{
-	font-size: 16px;
+	font-size: 1.2em;
 	font-family: 'Montserrat', sans-serif;
 	/*Body Text*/
 }
 
 footer h3{ /* RKW */
-	font-size: 16px;
+	font-size: 1.2em;
 	font-style: normal;
 	font-weight: normal;
 }
@@ -182,8 +178,8 @@ border-radius: 25px;*/
 }
 
 a#rightbutton {
-    padding: 10px 30px 10px 50px; 
-    z-index: 1;
+  padding: 10px 30px 10px 50px; 
+  z-index: 1;
 }
 
 #rightbutton{
@@ -202,13 +198,14 @@ a#rightbutton {
 	flex-direction: column;
 	flex-wrap: nowrap;
 	justify-content: space-around; /* space-evenly */
-	align-items: center;
+	align-items: right;
 	height: 60%;
 	width: 10%;
+	max-width: 50px;
 	
 	position: fixed;
 	padding-left: 2.5%;
-	margin-top: 200px; /* RKW */
+	margin-top: 170px; /* RKW */
 }
 
 .nav-icon {
@@ -283,7 +280,22 @@ a#rightbutton {
 /* smallest bootstrap breakpoint */ 
 @media (max-width: 576px) { 
   header {
-		padding-bottom: 0px;
 		padding-left: 2.5%;
+	}
+	.navbar-fixed-left {
+		margin-top: 170px;
+		padding-left: 2.5%;
+	}
+	body {
+		font-size: 12px;
+	}
+}
+
+@media (min-width: 576px) { 
+	.navbar-fixed-left {
+		padding-left: 30px;
+	}
+	header {
+		padding-left: 30px;
 	}
 }
