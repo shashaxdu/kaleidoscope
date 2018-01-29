@@ -2,22 +2,25 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        
 
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
 	<link rel="stylesheet" type="text/css" href="css/index.css">
-	<link rel="stylesheet" type="text/css" href="css/IndividualtoInfinity.css">
-
+	<link rel="stylesheet" type="text/css" href="css/Avatar.css"> 
 	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Allura" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Quicksand:300" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:200" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Raleway|Roboto" rel="stylesheet">
 
 	<script src="https://use.typekit.net/lnj5fvb.js"></script>
-	<script>try { Typekit.load({ async: true }); } catch (e) { }</script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
 	<title>Avatar</title>
 
@@ -25,185 +28,178 @@
 
 <body>
 
-	<div class="content" id="earth-blue">
-		<header>
-			<a href="index.html">
-				<h1>KALEIDOSCOPE</h1>
-			</a>
-			<h2> Create Your Intergalactic Passport</h2>
-		</header>
+	<div class="fixed-bg-avatar">
+		<div id="screen" >
+			<header>
+				<a href="index.html">
+					<h1>KALEIDOSCOPE</h1>
+				</a>
+				<h2>Build Your Own Golden Record </h2>
+			</header>
 
-		<div class="navbar-fixed-left">
-			<a href="Avatar.html" class="nav-icon hover-80-smaller hover">
-				<img src="img/navbar/avatar_icon_blue.png" alt="Avatar navbar icon" class="nav-icon-img selected">
-			</a>
-			<a href="Earth.html" class="nav-icon hover-80-smaller hover">
-				<img src="img/navbar/earth_icon.png" alt="Earth navbar icon" class="nav-icon-img">
-			</a>
-			<a href="SolarSystem.html" class="nav-icon hover-80-smaller hover">
-				<img src="img/navbar/solarsystem_icon.png" alt="Solar System navbar icon" class="nav-icon-img">
-			</a>
-			<a href="StarNeighborhood.html" class="nav-icon hover-80-smaller hover">
-				<img src="img/navbar/starneighborhood_icon.png" alt="Milky Way navbar icon" class="nav-icon-img">
-			</a>
-			<a href="Supercluster.html" class="nav-icon hover-80-smaller hover">
-				<img src="img/navbar/supercluster_icon.png" alt="Supercluster navbar icon" class="nav-icon-img">
-			</a>
-			<a href="Infinity.html" class="nav-icon hover-80-smaller hover">
-				<img src="img/navbar/infinity_icon.png" alt="Infinity navbar icon" class="nav-icon-img">
-			</a>
-		</div>
-
-		<!-- Page 1 - Tarjeta -->
-		<div class="container" id="tarjeta">
-			<div class="row">
-				<form class="col-xs-7" id="AvatarForm" onsubmit="return false;" name="avatarprofform">
-					<input type="text" id="fname" name="firstname" maxlength="13" placeholder="First Name">
-
-					<input type="text" id="age" name="age" maxlength="2" placeholder="Age">
-
-					<input type="text" id="country" name="country" placeholder="Country Name">
-
-					<select id="planet" name="planet">
-						<option value="planet">Trained on Planet:</option>
-						<option value="mercury">Mercury</option>
-						<option value="venus"> Venus</option>
-						<option value="earth">Earth</option>
-						<option value="mars">Mars</option>
-						<option value="jupiter">Jupiter</option>
-						<option value="saturn"> Saturn</option>
-						<option value="uranus"> Uranus</option>
-						<option value="neptune">Neptune</option>
-
-					</select>
-
-
-					<select id="galaxy" name="galaxy">
-						<option value="galaxy">Headed To Galaxy:</option>
-						<option value="andromeda">Andromeda</option>
-						<option value="blackeyegalaxy">Black Eye</option>
-						<option value="cartwheelgalaxy"> Cartwheel</option>
-						<option value="milkyway">Milky Way</option>
-						<option value="sombrerogalaxy"> Sombrero</option>
-						<option value="sunflowergalaxy"> Sunflower</option>
-						<option value="sunflowergalaxy"> Tadpole</option>
-						<option value="whirlpoolgalaxy"> Whirlpool</option>
-					</select>
-
-					<button type="reset" value="Reset" class="col-xs-3">
-						<h3>Clear</h3>
-					</button>
-					<button type="submit" value="Submit" class="col-xs-3" id="savebutton" onclick="saveinput()">Submit</button>
-
-				</form>
-				<div class="col-xs-5">
-					<img src="img/individualtoinfinity/User_Icon.png" class="buildavatar">
-					<h3 class="buildavatar" id="textbuildavatar"> Submit</h3>
-				</div>
-			</div>
-			<!--- The next step to this is to decide about interaction regarding the create avatar section-->
-			<div id="AvatarProfBadge">
-				<h3 id="Badgefname"> </h3>
-				<h3 id="Badgeage"> </h3>
-				<h3 id="Badgecountry"> </h3>
-				<h3 id="Badgeplanet"> </h3>
-				<h3 id="Badgegalaxy"> </h3>
+			<div class="navbar-fixed-left">
+				<a href="Avatar.html" class="nav-icon hover-80-smaller hover">
+					<img src="img/navbar/avatar_icon.png" alt="Avatar navbar icon" class="nav-icon-img">
+				</a>
+				<a href="Earth.html" class="nav-icon hover-80-smaller hover">
+					<img src="img/navbar/earth_icon.png" alt="Earth navbar icon" class="nav-icon-img">
+				</a>
+				<a href="SolarSystem.html" class="nav-icon hover-80-smaller hover">
+					<img src="img/navbar/solarsystem_icon_blue.png" alt="Solar System navbar icon" class="nav-icon-img selected">
+				</a>
+				<a href="StarNeighborhood.html" class="nav-icon hover-80-smaller hover">
+					<img src="img/navbar/starneighborhood_icon.png" alt="Milky Way navbar icon" class="nav-icon-img">
+				</a>
+				<a href="Supercluster.html" class="nav-icon hover-80-smaller hover">
+					<img src="img/navbar/supercluster_icon.png" alt="Supercluster navbar icon" class="nav-icon-img">
+				</a>
+				<a href="Infinity.html" class="nav-icon hover-80-smaller hover">
+					<img src="img/navbar/infinity_icon.png" alt="Infinity navbar icon" class="nav-icon-img">
+				</a>
 			</div>
 
-		</div>
+			<!-- Page 1 - Tarjeta -->
+			<div class="container" id="tarjeta">
+				<div class="row">
+					<form class="col-xs-7" id="AvatarForm" onsubmit="return false;" name="avatarprofform">
+						<input type="text" id="fname" name="firstname" maxlength="13" placeholder="First Name">
+						
+						<input type="text" id="age" name="age" maxlength="2" placeholder="Age">
+						
+						<input type="text" id="country" name="country" placeholder="Country Name">
+
+						<select id="planet" name="planet">
+							<option value="planet">Trained on Planet:</option>
+							<option value="mercury">Mercury</option>
+							<option value="venus"> Venus</option>
+							<option value="earth">Earth</option>
+							<option value="mars">Mars</option>
+							<option value="jupiter">Jupiter</option>
+							<option value="saturn"> Saturn</option>
+							<option value="uranus"> Uranus</option>
+							<option value="neptune">Neptune</option>
+						
+						</select>
 
 
-		<!-- Page 2 - Avatar Creator -->
-		<div class="container" id="page2_avatarcreator">
-			<div class="row">
-				<div class="col-xs-3"></div>
-				<div class="col-xs-4" id="avatarcreator">
+						<select id="galaxy" name="galaxy">
+							<option value="galaxy">Headed To Galaxy:</option>
+							<option value="andromeda">Andromeda</option>
+							<option value="blackeyegalaxy">Black Eye</option>
+							<option value="cartwheelgalaxy"> Cartwheel</option>
+							<option value="milkyway">Milky Way</option>
+							<option value="sombrerogalaxy"> Sombrero</option>
+							<option value="sunflowergalaxy"> Sunflower</option>             
+							<option value="sunflowergalaxy"> Tadpole</option>
+							<option value="whirlpoolgalaxy"> Whirlpool</option>
+						</select>
 
-					<img src="img/avatar/Astronaut_Icon_2.png" id="Astronaut-Blank" class="scaled">
-					<img src="img/avatar/Hair_01.png" id="Hair_01" class="scaled">
-					<img src="img/avatar/Hair_02.png" id="Hair_02" class="scaled">
-					<img src="img/avatar/Hair_03.png" id="Hair_03" class="scaled">
-					<img src="img/avatar/Hair_04.png" id="Hair_04" class="scaled">
-					<img src="img/avatar/Hair_05.png" id="Hair_05" class="scaled">
-					<img src="img/avatar/Hair_06.png" id="Hair_06" class="scaled">
-					<img src="img/avatar/Hair_07.png" id="Hair_07" class="scaled">
-					<img src="img/avatar/Eye_05.png" id="Eye_05" class="scaled">
-					<img src="img/avatar/Eye_06.png" id="Eye_06" class="scaled">
-					<img src="img/avatar/Eye_07.png" id="Eye_07" class="scaled">
-					<img src="img/avatar/Eye_08.png" id="Eye_08" class="scaled">
-					<img src="img/avatar/Eye_09.png" id="Eye_09" class="scaled">
-					<img src="img/avatar/Badge_09.png" id="Badge_09" class="scaled">
-					<img src="img/avatar/Badge_10.png" id="Badge_10" class="scaled">
-					<img src="img/avatar/Badge_11.png" id="Badge_11" class="scaled">
-					<img src="img/avatar/Badge_12.png" id="Badge_12" class="scaled">
+						<button type="reset" value="Reset" class="col-xs-3"><h3>Clear</h3></button>
+						<button type="submit" value="Submit" class="col-xs-3" id="savebutton" onclick="saveinput()">Submit</button>
 
-
+					</form> 
+					<div class="col-xs-5"> 
+						<img src="img/individualtoinfinity/User_Icon.png" class="buildavatar">
+						<h3 class="buildavatar" id="textbuildavatar"> Submit</h3>
+					</div>	
 				</div>
-				<div class="col-xs-4">
-					<div class="container-outer">
-						<div class="container-inner hair">
-							<img src="img/avatar/Hair_01.png" "id="001 ">
-						<img src="img/avatar/Hair_06.png " id="014 ">
-						<img src="img/avatar/Hair_07.png " id="015 ">
-						<img src="img/avatar/Hair_05.png " id="013 ">
+				<!--- The next step to this is to decide about interaction regarding the create avatar section-->
+				 <div id="AvatarProfBadge">
+					<h3 id="Badgefname">  </h3>
+					<h3 id="Badgeage"> </h3>
+					<h3 id="Badgecountry">  </h3>
+					<h3 id="Badgeplanet"> </h3>
+					<h3 id="Badgegalaxy">  </h3>
+				</div>
+			
+			</div>
 
-						<img src="img/avatar/Hair_02.png "  id="002 ">
-						<img src="img/avatar/Hair_03.png " id="003 ">
-						<img src="img/avatar/Hair_04.png " id="004 ">
-					</div> 
+
+ 			<!-- Page 2 - Avatar Creator -->
+			<div class="container" id="page2_avatarcreator">
+				<div class="row">
+					<div class="col-xs-3"></div>
+					<div class="col-xs-4" id="avatarcreator">
+						
+						<img src="img/avatar/Astronaut_Icon_2.png" id="Astronaut-Blank" class="scaled">
+						<img src="img/avatar/Hair_01.png" id="Hair_01" class="scaled" >
+						<img src="img/avatar/Hair_02.png" id="Hair_02" class="scaled">
+						<img src="img/avatar/Hair_03.png" id="Hair_03" class="scaled">
+						<img src="img/avatar/Hair_04.png" id="Hair_04" class="scaled">
+						<img src="img/avatar/Hair_05.png" id="Hair_05" class="scaled">
+						<img src="img/avatar/Hair_06.png" id="Hair_06" class="scaled">
+						<img src="img/avatar/Hair_07.png" id="Hair_07" class="scaled">
+						<img src="img/avatar/Eye_05.png" id="Eye_05" class="scaled" >
+						<img src="img/avatar/Eye_06.png" id="Eye_06" class="scaled">
+						<img src="img/avatar/Eye_07.png" id="Eye_07" class="scaled">
+						<img src="img/avatar/Eye_08.png" id="Eye_08" class="scaled">
+						<img src="img/avatar/Eye_09.png" id="Eye_09" class="scaled">
+						<img src="img/avatar/Badge_09.png" id="Badge_09" class="scaled" >
+						<img src="img/avatar/Badge_10.png" id="Badge_10" class="scaled">
+						<img src="img/avatar/Badge_11.png" id="Badge_11" class="scaled">
+						<img src="img/avatar/Badge_12.png" id="Badge_12" class="scaled">
+
+
+					</div>
+					<div class="col-xs-4">
+						<div class="container-outer">
+							<div class="container-inner hair">
+								<img src="img/avatar/Hair_01.png" "id="001">
+								
+								<img src="img/avatar/Hair_06.png" id="014">
+								<img src="img/avatar/Hair_07.png" id="015">
+								<img src="img/avatar/Hair_05.png" id="013">
+								<img src="img/avatar/Hair_02.png"  id="002">
+								<img src="img/avatar/Hair_03.png" id="003">
+								<img src="img/avatar/Hair_04.png" id="004">
+							</div> 
+						</div>
+						<div class="container-outer">
+							<div class="container-inner eye">
+								<img src="img/avatar/Eye_05.png" id="005">
+								<img src="img/avatar/Eye_06.png" id="006">
+								<img src="img/avatar/Eye_07.png" id="007">
+								<img src="img/avatar/Eye_08.png" id="008">
+								<img src="img/avatar/Eye_09.png" id="016">
+							</div> 
+						</div>
+						<div class="container-outer">
+							<div class="container-inner badge">
+								<img src="img/avatar/Badge_09.png" id="009">
+								<img src="img/avatar/Badge_10.png"  id="010">
+								<img src="img/avatar/Badge_11.png"  id="011">
+								<img src="img/avatar/Badge_12.png"  id="012">
+							</div> 
+						</div>
+						
+						<button id="saveavatar"> Submit </button>
+						<a href="Earth.html" class="endanimation">
+							<img src="img/avatar/Rocketship.png" id="endanimationphoto">
+							<h3 id="endanimationtext"> Blast Off!  </h3>
+						</a>	
+					</div>
 				</div>
-				<div class="container-outer ">
-					<div class="container-inner eye ">
-						<img src="img/avatar/Eye_05.png " id="005 ">
-						<img src="img/avatar/Eye_06.png " id="006 ">
-						<img src="img/avatar/Eye_07.png " id="007 ">
-						<img src="img/avatar/Eye_08.png " id="008 ">
-						<img src="img/avatar/Eye_09.png " id="016 ">
-					</div> 
-				</div>
-				<div class="container-outer ">
-					<div class="container-inner badge ">
-						<img src="img/avatar/Badge_09.png " id="009 ">
-						<img src="img/avatar/Badge_10.png "  id="010 ">
-						<img src="img/avatar/Badge_11.png "  id="011 ">
-						<img src="img/avatar/Badge_12.png "  id="012 ">
-					</div> 
-				</div>
+			</div>
+			<footer class="navbar-fixed-bottom">
+					
+				<a href="IndividualtoInfinity.html" >
+					<img src="img/navbar/LeftArrow.png" id="leftbutton">
+				</a>
 				
-				<button id="saveavatar "> Submit </button>
-
-				<a href="Earth.html " class="endanimation ">
-					<img src="img/avatar/Rocketship.png " id="endanimationphoto ">
-					<h3 id="endanimationtext "> Blast Off!  </h3>
-				</a>	
-			</div>
-
+				<a href="Earth.html" > 
+					<img src="img/navbar/RightArrow.png" id="rightbutton">
+				</a>
+				
+				<h3> Prepare to travel through space by creating your intergalactic passport. </h3>
+				
+			</footer>
 		</div>
 	</div>
-
-	<footer class="navbar-fixed-bottom ">
-			
-		<a href="index.html " >
-			<img src="img/navbar/LeftArrow.png " id="leftbutton ">
-		</a>
-		
-		<a href="Earth.html " > 
-			<img src="img/navbar/RightArrow.png " id="rightbutton ">
-		</a>
-		
-		<h3> Prepare to travel through space by creating your intergalactic passport. </h3>
-
-		
-	</footer>
-
-</div>
-
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js " integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa
-							 " crossorigin="anonymous "></script>
-	<script src="js/Avatar.js "></script>
+ 	
 	
-</div>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="js/Avatar.js"></script>
 </body>
 </html>
