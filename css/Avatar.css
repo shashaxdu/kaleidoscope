@@ -459,8 +459,7 @@ top: 5px;
 
 .navbar-fixed-left {
   position: fixed;
-	padding-left: 2.5%;
-	padding-top: 180px;
+	/* padding-left: 2.5%; */
 }
 
 .navbarleft {
