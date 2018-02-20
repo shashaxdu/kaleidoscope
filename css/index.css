@@ -11,6 +11,7 @@ body {
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
+	min-height: 900px;
 	height: 100%;
 	color: white;
 }
@@ -30,7 +31,7 @@ html {
 }
 .content#earth {
 	background-image: url(../img/background/Earth_Moon_Sun_Bkgd.png);
-} 
+}
 
 
 /* FOOTER */
@@ -43,6 +44,7 @@ html {
 	align-items: center;
 	align-content: center;
 	z-index: 2;
+	width: 100%;
 }
 
 .bottom-nav p {
@@ -55,20 +57,6 @@ html {
 }
 
 /* END FOOTER */
-
-/*
-.fixed-bg {
-     Set a specified height, or the minimum height for the background image 
-    min-height: 850px;
-    /* Set background image to fixed (don't scroll along with the page) 
-    background-attachment: fixed;
-    /* Center the background image 
-    background-position: center;
-    /* Set the background image to no repeat 
-    background-repeat: no-repeat;
-    /* Scale the background image to be as large as possible 
-    background-size: cover;
-} */
 
 a {
 	color:white;
@@ -131,7 +119,7 @@ h1{
 h2{
 	font-size: 1.8em;
 	font-family: 'Josefin Sans', sans-serif;
-	
+	color: white;
 }
 
 
@@ -162,7 +150,6 @@ bottom: 20px;
 }
 
 a#leftbutton {
-
 padding: 10px 50px 10px 30px; 
 /*background-color: #9C9BAB;
 border-radius: 25px;*/
@@ -206,6 +193,7 @@ a#rightbutton {
 	position: fixed;
 	padding-left: 2.5%;
 	margin-top: 170px; /* RKW */
+	z-index: 10;
 }
 
 .nav-icon {
@@ -235,6 +223,10 @@ a#rightbutton {
 
 .hover-90-smaller:hover {
 	transform: scale(0.9, 0.9);
+}
+
+.fixed {
+	position: fixed;
 }
 
 /* .hover-120-larger:hover {
@@ -278,24 +270,27 @@ a#rightbutton {
 }
 
 /* smallest bootstrap breakpoint */ 
-@media (max-width: 576px) { 
+@media (max-width: 775px) { 
   header {
 		padding-left: 2.5%;
 	}
 	.navbar-fixed-left {
 		margin-top: 170px;
-		padding-left: 2.5%;
+		padding-left: 1%;
 	}
 	body {
 		font-size: 12px;
+	}
+	.nav-icon-img {
+		min-width: 40px;
 	}
 }
 
 @media (min-width: 576px) { 
 	.navbar-fixed-left {
-		padding-left: 30px;
+		padding-left: 15px;
 	}
 	header {
-		padding-left: 30px;
+		padding-left: 15px;
 	}
 }
