@@ -1,20 +1,8 @@
 @charset "UTF-8";
 /* CSS Document */
 
-.fixed-bg {
-    /* The background image */
-  	background-image: url(../img/background/SolarSystem_ToScale.png);
-    /* Set a specified height, or the minimum height for the background image */
-    min-height: 850px;
-}
-
-h3{
-	color: black;
-}
-
-footer h3{ /* RKW */
-	font-size: 16px;
-	color:white;
+.content {
+	background-image: url(../img/background/SolarSystem_ToScale.png);
 }
 
 #X{
@@ -60,9 +48,38 @@ iframe {
 	border-radius: 25px;
 	height: 400px;
 	padding: 10px 30px 30px 30px;
-	margin: -20px 50px 0 290px;
+	/* margin: 150px 50px 0 290px; */
+	margin-top: 150px;
+	overflow-y: scroll;
 	z-index: 0;
 }
+
+/* scrollbar styles */
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey; 
+	border-radius: 10px;
+	height: 80%;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #ffffff80;
+	border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #ffffffBF;
+}
+
+/* end scrollbar styles */
 
 
 #aboutrecord h3, #aboutrecord h2{
@@ -71,15 +88,15 @@ iframe {
 	text-align: center;
 	margin-top: 20px;
 }
-#imagerecord {
 
+#imagerecord {
 	position: fixed;
 	margin-top: 250px;
 	margin-left:20px;
-width: 220px;
-cursor: pointer;
-background-color: rgba(245,214,147, 0.8);
-border-radius: 110px;
+	width: 220px;
+	cursor: pointer;
+	background-color: rgba(245,214,147, 0.8);
+	border-radius: 110px;
 }
 
 #createrecord {
