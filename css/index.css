@@ -87,6 +87,7 @@ header {
 .bottom-right {
 	position: fixed;
 	width: 10%;
+	min-width: 70px;
 	margin: 0;
 	padding: 0;
 	bottom: 3%;
@@ -229,6 +230,10 @@ a#rightbutton {
 	position: fixed;
 }
 
+.bold {
+	font-weight: bold;
+}
+
 /* .hover-120-larger:hover {
 	transform: scale(1.2, 1.2);
 } */
@@ -245,7 +250,6 @@ a#rightbutton {
 
 /* OTHER COMMON IDS */
 
-
 .flex-row {
   display: flex;
   padding: 0;
@@ -259,14 +263,6 @@ a#rightbutton {
 	flex-wrap: wrap;
 	justify-content: space-around;
 	flex-flow: column;
-}
-
-.avatar-img {
-	min-width: 10em; /* RKW */
-	max-width: 22.5em; /* RKW */
-	width: 100%;
-	padding: 5%;
-	align-items: center;
 }
 
 /* smallest bootstrap breakpoint */ 

@@ -1,3 +1,16 @@
+.avatar-img {
+	min-width: 10em; /* RKW */
+	max-width: 22.5em; /* RKW */
+	width: 100%;
+	padding: 5%;
+	align-items: center;
+}
+
+#home-icon-container > div > .row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
 @media (max-width : 995px) {
   .home-icon {
     /* width: 260px; */
@@ -11,7 +24,3 @@
   }
 }
 
-#home-icon-container > div > .row {
-  margin-right: 0px;
-  margin-left: 0px;
-}

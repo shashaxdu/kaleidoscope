@@ -1,19 +1,16 @@
 @charset "UTF-8";
-/* CSS Document */
 
 .content {
 	background-image: url(../img/background/SolarSystem_ToScale.png);
 }
 
-#X{
+#X {
 	color: white;
-	font-size: 16px;
 	cursor: pointer;
-	position: fixed;
 	z-index: 1; 
-	 visibility: hidden;
-	  	top: 140px;
-	  	left: 280px;
+	visibility: hidden;
+	  top: 140px;
+	  left: 280px;
 }
 
 #site{
@@ -28,10 +25,8 @@
 iframe {
 	position: fixed;
 	z-index: 1;
-	 
 	 visibility: hidden;
 	 	top: 120px;
-
 	margin: 60px 0 0 300px;
 	border-color: white;
 	border-width: 2px;
@@ -41,88 +36,124 @@ iframe {
 
 }
 
+.align-bottom {
+	margin-top: 150px;
+	/* display: inline-block;
+	vertical-align: baseline;   */
+	/* position: relative; */
+	height: 60%;
+}
+
+.align-bottom:before {
+	content: "";
+  display: inline-block;
+  vertical-align: baseline;
+  height: 100%;
+}
+
+.check {
+	display: inline-block;
+	vertical-align: baseline;  
+}
+
 #aboutrecord {
-	position: fixed;
 	background-color: rgba(245,214,147, 0.8);
+	font-family: 'Montserrat', sans-serif;
 	color: black;
 	border-radius: 25px;
-	height: 400px;
+	height: 100%;
 	padding: 10px 30px 30px 30px;
-	/* margin: 150px 50px 0 290px; */
-	margin-top: 150px;
 	overflow-y: scroll;
-	z-index: 0;
+	z-index: 5;
+}
+
+#aboutrecord > p {
+	color: black;
+	font-size: 16px;
+	text-align: center;
+	margin-top: 20px;
 }
 
 /* scrollbar styles */
 
 /* width */
-::-webkit-scrollbar {
+#aboutrecord::-webkit-scrollbar {
 	width: 10px;
 }
 
 /* Track */
-::-webkit-scrollbar-track {
+#aboutrecord::-webkit-scrollbar-track {
 	box-shadow: inset 0 0 5px grey; 
 	border-radius: 10px;
 	height: 80%;
 }
 
 /* Handle */
-::-webkit-scrollbar-thumb {
+#aboutrecord::-webkit-scrollbar-thumb {
 	background: #ffffff80;
 	border-radius: 10px;
 }
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
+#aboutrecord::-webkit-scrollbar-thumb:hover {
 	background: #ffffffBF;
 }
 
 /* end scrollbar styles */
 
+/* Create Record container */
 
-#aboutrecord h3, #aboutrecord h2{
-	font-size: 16px;
-	color: black;
-	text-align: center;
-	margin-top: 20px;
+#create-record-container {
+	bottom: 0;
+	right: 0;
+	padding-left: 30px;
+	height: auto;
+	z-index: 1;
 }
 
-#imagerecord {
-	position: fixed;
-	margin-top: 250px;
-	margin-left:20px;
-	width: 220px;
+.img-wrapper {
+	/* position: absolute; */
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: 0 auto;
 	cursor: pointer;
+}
+
+.img-wrapper > img {
+	width: 100%;
+	min-width: 100px;
+	max-width: 220px;
 	background-color: rgba(245,214,147, 0.8);
 	border-radius: 110px;
+
+}
+
+#create-record-container > a {
+	margin: 0 auto;
 }
 
 #createrecord {
-	position: fixed;
 	align-items: center;
 	text-align: center;
 	border-radius: 25px;
 	background-color: rgba(245,214,147, 0.8);
 	border-color: rgba(0,0,0,0);
-	margin: 480px 0 0 840px;
 	padding: 5px 0px 5px 0px;
-	width: 200px;
+	min-width: 100px;
+	max-width: 200px;
 	cursor: pointer;
-	
 }
 
-#voyagerimg{
+
+/* #voyagerimg{
 	position: fixed;
 	right: 200px;
 	bottom: 100px;
 	text-align: center;
-}
+} */
 
 #voyagerimg h3{	
 	font-size:13px;
-	margin-top: 3px;
-	color: white;
-
 }

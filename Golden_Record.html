@@ -56,7 +56,7 @@
 		</div>
 
 
-		<h3 id="X"> X </h3>
+		<h3 class="fixed" id="X"> X </h3>
 		<a target="_blank" href="http://goldenrecord.org">
 			<h3 id="site"> explore more at goldenrecord.org </h3>
 		</a>
@@ -64,62 +64,63 @@
 
 
 		<div class="container">
-			<div class="row">
-				<div class="col-xs-3"> </div>
-				<div class="col-xs-offset-2 col-xs-6" id="aboutrecord">
-					<h3> On your journey through space, you’ve stumbled upon Voyager 1! Voyager 1 a space probe that was launched in 1977 for
-						the purpose of studying the outer solar system. It has travelled farther than any other man-made object has from Earth.
-					</h3>
 
-					<h3> On the Voyager lies a message-in-a-bottle for the cosmos: the Golden Record, a gold-plated disc that was created in
-						case the spacecraft is ever found by intelligent life from planets outside our Solar System (called exoplanets). The
-						Golden Record carries spoken greetings from the people of Earth, photos of life on Earth, music from diverse cultures,
-						the “Sounds of Earth”, which include the sounds of whales, a baby crying, and waves crashing on the shore, among other
-						things. The Golden Record also includes a range of scientific information written in a way that we hope extraterrestrials
-						will understand. Lastly, it includes the brain waves of Ann Duryan, the Creative Director of the Golden Record project.
-					</h3>
+			<div class="row fixed align-bottom">
+					<div class="check col-xs-offset-2 col-xs-6" id="aboutrecord">
+						<p>
+							On your journey through space, you’ve stumbled upon Voyager 1! Voyager 1 a space probe that was launched in 1977 for the
+							purpose of studying the outer solar system. It has travelled farther than any other man-made object has from Earth.
+						</p>
 
-					<h2> To explore the contents of the Golden Record, click on the golden disc! </h2>
-				</div>
+						<p>
+							On the Voyager lies a message-in-a-bottle for the cosmos: the Golden Record, a gold-plated disc that was created in case
+							the spacecraft is ever found by intelligent life from planets outside our Solar System (called exoplanets). The Golden
+							Record carries spoken greetings from the people of Earth, photos of life on Earth, music from diverse cultures, the
+							“Sounds of Earth”, which include the sounds of whales, a baby crying, and waves crashing on the shore, among other
+							things. The Golden Record also includes a range of scientific information written in a way that we hope extraterrestrials
+							will understand. Lastly, it includes the brain waves of Ann Duryan, the Creative Director of the Golden Record project.
+						</p>
 
-				<div class="row">
-					<div class="col-xs-5"> </div>
-					<img src="img/SolarSystem/goldenrecord.png" id="imagerecord">
-				</div>
-
-				<div class="row">
-					<div class="col-xs-8"> </div>
-					<a href="BuildYourGolden_Record.html">
-						<h3 class="col-xs-2" id="createrecord"> Create Your Own Golden Record! </h3>
-					</a>
-					<div>
+						<p class="bold">
+							To explore the contents of the Golden Record, click on the golden disc!
+						</p>
 					</div>
 
-					<div id="voyagerimg">
-						<img src="img/solarsystem/voyager.png">
-						<h3> Voyager 1</h3>
+					<div class="check col-xs-4 col-m-3 flex-column" id="create-record-container">
+						<div class="img-wrapper">
+							<img class="" src="img/SolarSystem/goldenrecord.png" id="imagerecord">
+						</div>
+						<a class="" href="BuildYourGolden_Record.html">
+							<h3 id="createrecord"> Create Your Own Golden Record! </h3>
+						</a>
 					</div>
+			</div>
 
-					<footer class="navbar-fixed-bottom">
+			<div class="col-xs-3 bottom-right" id="voyagerimg">
+				<img src="img/solarsystem/voyager.png">
+				<h3>Voyager 1</h3>
+			</div>
 
-						<a href="SolarSystem.html">
-							<img src="img/navbar/LeftArrow.png" id="leftbutton">
-						</a>
+		</div>
+		<footer class="navbar-fixed-bottom">
 
-						<a href="BuildYourGolden_Record.html">
-							<img src="img/navbar/RightArrow.png" id="rightbutton">
-						</a>
+			<a href="SolarSystem.html">
+				<img src="img/navbar/LeftArrow.png" id="leftbutton">
+			</a>
 
-						<!--     <h3> Copyright © 2017 Kaleidoscope. All Rights Reserved. </h3> -->
+			<a href="BuildYourGolden_Record.html">
+				<img src="img/navbar/RightArrow.png" id="rightbutton">
+			</a>
 
-					</footer>
-				</div>
+			<!--     <h3> Copyright © 2017 Kaleidoscope. All Rights Reserved. </h3> -->
 
-				<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-				 crossorigin="anonymous"></script>
-				<script src="js/Golden_Record.js"></script>
+		</footer>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+		 crossorigin="anonymous"></script>
+		<script src="js/Golden_Record.js"></script>
 
 
 </body>
