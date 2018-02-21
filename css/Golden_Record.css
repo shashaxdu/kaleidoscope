@@ -36,24 +36,15 @@ iframe {
 
 }
 
-.align-bottom {
+.margin-150 {
 	margin-top: 150px;
-	/* display: inline-block;
-	vertical-align: baseline;   */
-	/* position: relative; */
+	height: 100%;
+}
+
+.align-bottom {
 	height: 60%;
-}
-
-.align-bottom:before {
-	content: "";
-  display: inline-block;
-  vertical-align: baseline;
-  height: 100%;
-}
-
-.check {
-	display: inline-block;
-	vertical-align: baseline;  
+	align-items: flex-end;
+	justify-content: center;
 }
 
 #aboutrecord {
@@ -103,18 +94,12 @@ iframe {
 
 /* Create Record container */
 
-#create-record-container {
-	bottom: 0;
-	right: 0;
-	padding-left: 30px;
-	height: auto;
-	z-index: 1;
+.create-record-wrapper {
+	width: fit-content;
 }
 
 .img-wrapper {
 	/* position: absolute; */
-	top: 0;
-	right: 0;
 	bottom: 0;
 	left: 0;
 	margin: 0 auto;
@@ -130,8 +115,9 @@ iframe {
 
 }
 
-#create-record-container > a {
+.create-record-wrapper > a > h3 {
 	margin: 0 auto;
+	margin-top: 20px;
 }
 
 #createrecord {
@@ -145,14 +131,6 @@ iframe {
 	max-width: 200px;
 	cursor: pointer;
 }
-
-
-/* #voyagerimg{
-	position: fixed;
-	right: 200px;
-	bottom: 100px;
-	text-align: center;
-} */
 
 #voyagerimg h3{	
 	font-size:13px;
