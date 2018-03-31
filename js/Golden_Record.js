@@ -18,7 +18,6 @@ $(document).ready(function(){
         $("#X").css("visibility", "hidden");
         $("iframe").css("visibility", "hidden");
         $("#site").css("visibility", "hidden");
-
     }
     );
 

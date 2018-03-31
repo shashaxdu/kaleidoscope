@@ -116,7 +116,7 @@ h1{
 	font-weight: normal;
 	font-family: 'Quicksand', sans-serif;
 }
- 
+
 h2{
 	font-size: 1.8em;
 	font-family: 'Josefin Sans', sans-serif;
@@ -151,7 +151,7 @@ bottom: 20px;
 }
 
 a#leftbutton {
-padding: 10px 50px 10px 30px; 
+padding: 10px 50px 10px 30px;
 /*background-color: #9C9BAB;
 border-radius: 25px;*/
 }
@@ -166,7 +166,7 @@ border-radius: 25px;*/
 }
 
 a#rightbutton {
-  padding: 10px 30px 10px 50px; 
+  padding: 10px 30px 10px 50px;
   z-index: 1;
 }
 
@@ -190,7 +190,7 @@ a#rightbutton {
 	height: 60%;
 	width: 10%;
 	max-width: 50px;
-	
+
 	position: fixed;
 	padding-left: 2.5%;
 	margin-top: 170px; /* RKW */
@@ -234,6 +234,10 @@ a#rightbutton {
 	font-weight: bold;
 }
 
+.absolute {
+	position: absolute;
+}
+
 /* .hover-120-larger:hover {
 	transform: scale(1.2, 1.2);
 } */
@@ -265,8 +269,8 @@ a#rightbutton {
 	flex-flow: column;
 }
 
-/* smallest bootstrap breakpoint */ 
-@media (max-width: 775px) { 
+/* smallest bootstrap breakpoint */
+@media (max-width: 775px) {
   header {
 		padding-left: 2.5%;
 	}
@@ -282,7 +286,7 @@ a#rightbutton {
 	}
 }
 
-@media (min-width: 576px) { 
+@media (min-width: 576px) {
 	.navbar-fixed-left {
 		padding-left: 15px;
 	}
