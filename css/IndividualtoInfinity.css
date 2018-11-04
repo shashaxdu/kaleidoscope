@@ -61,17 +61,17 @@
 	z-index: 2;
 }
 
-#person:hover {
+/* #person:hover {
 	width: 16vmax;
 }
 
 #person:hover {
 	width: 16vmax;
 }
- 
+
 #infinity:hover {
 	width: 16vmax;
-}
+} */
 
 /* Earth Only - Earth, Moon, Sun */
 
@@ -156,7 +156,7 @@ input[type=text], select {/*form fields on passport.*/
 		color: black;
 		text-align: left;
 		padding-left: 10px;
-		padding-right: 10px;	
+		padding-right: 10px;
 }*/
 
 #tarjeta img{ /*Blank Avatar Image*/
@@ -406,10 +406,10 @@ top: 5px;
 	font-family: 'Josefin Sans', sans-serif;
 	color: black;
 	text-align: center;
-	
+
 	padding-left: 10px;
-	padding-right: 10px;	
-	
+	padding-right: 10px;
+
 	visibility: hidden;
 }
 
@@ -435,7 +435,7 @@ top: 5px;
 /* Shared CSS Attributes - all pages */
 
 
-/* .navbarleft { /* RKW 
+/* .navbarleft { /* RKW
   	display: block;
 	padding-bottom: 3vh;
 } */
@@ -502,7 +502,7 @@ h4{ /*pop-up text*/
 	font-size: 2.5vmin;
 	line-height: 1.4em;
 	font-family: 'Open Sans', sans-serif;
-	letter-spacing: 1px; 
+	letter-spacing: 1px;
 	text-align: center;
 }*/
 
