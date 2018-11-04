@@ -1,139 +1,77 @@
-/* scss scale: % of the screen to scale all planets */
-
-body {
-	width: 100%;
-	height: 100%;
-	font-size: 14px;
-}
-
-.content {
+body{
 	background: black;
-	background-attachment: fixed;
-	background-size: cover;
-	background-position: center;
-	min-height: 900px;
-	height: 100%;
-	color: white;
 }
 
-html {
-	height: 100%;
+.fixed-bg {
+    /* Set a specified height, or the minimum height for the background image 
+    min-height: 850px;
+    /* Set background image to fixed (don't scroll along with the page) */
+    background-attachment: fixed;
+    /* Center the background image */
+    background-position: center;
+    /* Set the background image to no repeat */
+    background-repeat: no-repeat;
+    /* Scale the background image to be as large as possible */
+    background-size: cover;
 }
 
-.content#home {
-	background-image: url(../img/background/Milky_Way.jpg);
-}
-.content#earth-blue {
-	background-image: url(../img/background/Earth_Natural_Blue.jpg);
-}
-.content#solar-system {
-	background-image: url(../img/background/SolarSystem_Bkgd.png);
-}
-.content#earth {
-	background-image: url(../img/background/Earth_Moon_Sun_Bkgd.png);
+a{
+    color:white;
 }
 
-
-/* FOOTER */
-
-.bottom-nav {
-	height: 20%;
-	bottom: 0px;
-	position: fixed;
-	display: flex;
-	align-items: center;
-	align-content: center;
-	z-index: 2;
-	width: 100%;
-}
-
-.bottom-nav p {
-	padding: 0;
-	font-size: 1.2em; /* RKW */
-	font-family: 'Montserrat', sans-serif;
-	text-align: center;
-	z-index: 1;
-	margin-bottom: 0;
-}
-
-/* END FOOTER */
-
-a {
-	color:white;
-}
-
-a:hover {
-	color:white;
-}
-
-.container {
-	padding: 0;
-	margin: 0;
-	width: 100%;
-}
-
-#home>.container {
-	height: 100%;
-	/* margin-top: 100px; */
-}
-
-header {
-	position: fixed;
+header{
 	padding:30px;
-	padding-top: 20px;
-	padding-left: 2.5%;
+	padding-top: 20px;	
 }
 
-.bottom-right {
-	position: fixed;
-	width: 10%;
-	min-width: 70px;
-	margin: 0;
-	padding: 0;
-	bottom: 3%;
-	right: 3%;
-	z-index: 5;
-	text-align: center;
-	align-content: center;
-	font-size: 1.2em;
+.navbarleft{
+	/* position: absolute; */
+    margin-left: 45px; 
+    display: block;
+    padding-bottom: 3vh;
 }
 
-.bottom-right h3 {
-	margin: 0;
-
+.navbar-fixed-left {
+    position: fixed;
+    padding-left: 2.5%;
+    /* padding-top: 180px; */
 }
-
-.aboutus {
-	width: 50%;
-}
-
 
 /*****/
 
 h1{
-	font-size: 3.5em;
+	color:white;
+	font-size: 50px;
 	font-style: normal;
 	font-weight: normal;
 	font-family: 'Quicksand', sans-serif;
 }
-
+ 
 h2{
-	font-size: 1.8em;
+	font-size: 24px;
 	font-family: 'Josefin Sans', sans-serif;
 	color: white;
 }
 
 
+
 h3{
-	font-size: 1.2em;
+	color: white;
+	font-size: 14px;
 	font-family: 'Montserrat', sans-serif;
 	/*Body Text*/
 }
 
-footer h3{ /* RKW */
-	font-size: 1.2em;
-	font-style: normal;
-	font-weight: normal;
+/*****/
+
+
+
+
+
+footer h3{
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
 }
 
 footer {
@@ -151,7 +89,8 @@ bottom: 20px;
 }
 
 a#leftbutton {
-padding: 10px 50px 10px 30px;
+
+padding: 10px 50px 10px 30px; 
 /*background-color: #9C9BAB;
 border-radius: 25px;*/
 }
@@ -159,138 +98,65 @@ border-radius: 25px;*/
 /* Horizontal Bottom Navbar - all pages sans Index */
 
 #leftbutton{
-	position: fixed;
-	left: 300px;
-	bottom:10px;
-	width:50px;
+position: fixed;
+left: 300px;
+bottom:10px;
+width:50px;
+
 }
 
 a#rightbutton {
-  padding: 10px 30px 10px 50px;
-  z-index: 1;
+    padding: 10px 30px 10px 50px; 
+    z-index: 1;
 }
 
 #rightbutton{
-	width:50px;
+width:50px;
 
-	position: fixed;
-	right: 300px;
-	bottom: 10px;
+position: fixed;
+right: 300px;
+bottom: 10px;
 }
 
 
 /** NAVBAR IDS **/
 
-.navbar-fixed-left {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: space-around; /* space-evenly */
-	align-items: right;
-	height: 60%;
-	width: 10%;
-	max-width: 50px;
-
-	position: fixed;
-	padding-left: 2.5%;
-	margin-top: 170px; /* RKW */
-	z-index: 10;
+#Me_Nav_Icon{
+	width: 50px;
 }
 
-.nav-icon {
-	width: 50px; /* TODO 90% max-width etc changing depending on viewport size */
-	align-content: center;
-	vertical-align: center;
+#Earth_Nav_Icon{
+	width: 50px;
 }
 
-.nav-icon-img {
-	width: 100%;
-	min-width: 50px;
-	vertical-align: center;
+#SolarSystem_Nav_Icon{
+	width: 50px;
 }
 
-/* HOVER OPTIONS */
+#MilkyWay_Nav_Icon{
+	width: 50px;
+} 
 
-.hover {
-	-moz-transition: 0.5s ease-in-out;
-	-webkit-transition: 0.5s ease-in-out;
-	-o-transition: 0.5s ease-in-out;
-	transition: 0.5s ease-in-out;
+#ObUniv_Nav_Icon{
+	width: 50px;
+} 
+
+#Infinity_Nav_Icon {
+	width: 50px;
 }
 
-.hover-80-smaller:hover {
-	transform: scale(0.8, 0.8);
-}
-
-.hover-90-smaller:hover {
-	transform: scale(0.9, 0.9);
-}
-
-.fixed {
-	position: fixed;
-}
-
-.bold {
-	font-weight: bold;
-}
-
-.absolute {
-	position: absolute;
-}
-
-/* .hover-120-larger:hover {
-	transform: scale(1.2, 1.2);
-} */
-
-.selected {
-	-moz-transition: none;
-	-webkit-transition: none;
-	-o-transition: none;
-	transition: none;
-	transform: none !important;
-}
-
-/** END NAVBAR **/
+/** END NAVBAR IDS **/
 
 /* OTHER COMMON IDS */
 
-.flex-row {
-  display: flex;
-  padding: 0;
-  width: 100%;
-	flex-wrap: wrap;
-	justify-content: space-around;
+#person{
+	position:absolute;
+	align-content: center;
+	margin: 190px 120px 0px 200px;	
 }
 
-.flex-column {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	flex-flow: column;
-}
-
-/* smallest bootstrap breakpoint */
-@media (max-width: 775px) {
-  header {
-		padding-left: 2.5%;
-	}
-	.navbar-fixed-left {
-		margin-top: 170px;
-		padding-left: 1%;
-	}
-	body {
-		font-size: 12px;
-	}
-	.nav-icon-img {
-		min-width: 40px;
-	}
-}
-
-@media (min-width: 576px) {
-	.navbar-fixed-left {
-		padding-left: 15px;
-	}
-	header {
-		padding-left: 15px;
-	}
+#infinity {
+	position:absolute;
+	align-content: center;
+	margin: 190px 120px 0px 465px;	
 }
