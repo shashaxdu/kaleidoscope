@@ -2,34 +2,54 @@
 /* CSS Document */
 
 
-/*
+/* Backgrounds */
+
 body{
-	background-image: url(img/andomeda.jpeg);
-	background-repeat: no-repeat;
-    background-attachment: scroll;
+    background-color: black;
+}
+
+a{
+ 	color:white;
+}
+button {
+	z-index: 20;
+}
+
+.fixed-bg-index {
+    /* The background image for the Index page */
+    background-image: url(../img/background/Milky_Way.jpg);
+    /* Set a specified height, or the minimum height for the background image */
+    min-height:100vh;
+    /* Set background image to fixed (don't scroll along with the page) */
+    background-attachment: fixed;
+    /* Center the background image */
     background-position: center;
-	background-size: cover;
-}
-CAN COPY AND PASTE from Body to Footer h3 into every page*/
-
-h3{
-	color: black;
-	font-size: 20px;
-	/*Body Text*/
+    /* Set the background image to no repeat */
+    background-repeat: no-repeat;
+    /* Scale the background image to be as large as possible */
+    background-size: cover;
 }
 
-footer h3{
-	font-size: 16px;
-	color:white;
+.fixed-bg-earth {
+    /* The background image for the Earth page */
+    background-image: url(../img/background/Earth_Moon_Sun_Bkgd.png);
+    /* Set a specified height, or the minimum height for the background image */
+    min-height: 100vh;
+    /* Set background image to fixed (don't scroll along with the page) */
+    background-attachment: fixed;
+    /* Center the background image */
+    background-position: center;
+    /* Set the background image to no repeat */
+    background-repeat: no-repeat;
+    /* Scale the background image to be as large as possible */
+    background-size: cover;
 }
 
-#fixed-bg {
+.fixed-bg-avatar {
     /* The background image */
-   z-index: -1;
 	background-image: url(../img/background/Earth_Natural_Blue.jpg);
-    /* Set a specified height, or the minimum height for the background image 
-    min-height: 100px;*/
-
+    /* Set a specified height, or the minimum height for the background image */
+    min-height: 100vh;
    /* Set background image to fixed (don't scroll along with the page) */
     background-attachment: fixed;
     /* Center the background image */
@@ -40,84 +60,163 @@ footer h3{
     background-size: cover;
 }
 
-#screen{
-	background-color: rgba(190, 174, 236, .10);
+
+/* Index Only */
+
+#images a, #images img {
+  	width: 15vmax !important;
+  	margin-right: 12%;
+  	margin-left:8%;
+  	margin-top: 28%;
+	z-index: 1;
+}
+
+#aboutimg{
+	width: 3.5vw;
+	position: fixed;
+	bottom: 8%;
+	right: 3%;
+	z-index: 2;
+}
+
+#abouttext{
+	font-size: 2vmin;
+	text-align: center;
+	position: fixed;
+	bottom: 3%;
+	right: 3%;
+	z-index: 2;
+}
+
+#person:hover {
+	width: 16vmax;
+}
+ 
+#infinity:hover {
+	width: 16vmax;
+}
+
+/* Earth Only - Earth, Moon, Sun */
+
+#moonimg{
+	position: fixed;
+	bottom: 60%;
+	right: 30%;
+	width: 12vw !important;
+	cursor: pointer;
+	visibility: visible;
+	z-index: 2;
+}
+
+#sunimg{
+	position: fixed;
+	bottom: 80%;
+	right: 19%;
+	width: 8vw !important;
+	cursor: pointer;
+	visibility: visible;
+	z-index: 1;
+}
+
+#earthimg{
+	position: fixed;
+	bottom: 3%;
+	right: 40%;
+	width: 35vw !important;
+	cursor: pointer;
+	visibility: visible;
+	z-index: 3;
+}
+
+#suntext, #moontext, #earthtext{
+	visibility: hidden;
+	position: absolute;
+	top: 45%;
+	right: 3%;
+}
+
+
+/* Avatar Only */
+
+/*#screen{
+	background-color: rgba(190, 174, 236);
 	width: auto;
 	min-height: 850px;
 	z-index: 0;
+}*/
 
-}
-
-/********************************************/
-
-
-#tarjeta {
-	
+#tarjeta { /*Passport*/
 	position: fixed;
 	left: 30%;
-	top: 280px;
-	width: 50%;
-	height: 50%;
-	border-radius:25px;
-	background-color: rgba(255, 255, 255, .4)
-	/*
-	;#9C9BAB;
-	right: 0px;
-	margin-top: 100px;
-    margin-right: 150px;
-	width: 600px;
-	height:365px;
-	margin-bottom: 100px;
-	*/
+	top: 30%;
+	width: 50vw;
+	height: 350px;
+	border-radius:15px;
+	background-color: rgba(149, 182, 202, .95)
 }
 
-form {
-/*	This Can Be Changed to Whatever I Believe and Should Work Properly*/
-	font-family: 'Josefin Sans', sans-serif;
-	margin-top: 30px;
+form {/*This Can Be Changed to Whatever I Believe and Should Work Properly*/
+	font-family: 'Open Sans', sans-serif;
+	color: black;
+	font-size: 8pt;
+	padding-top: 5%;
 	visibility: visible;
 }
 
-/*Typed In Input*/
-input[type=text], select {
-    width: 90%;
-    padding: 10px 10px 10px ;
-    margin: 15px 5% 15px 5%;
+input[type=text], select {/*form fields on passport.*/
+    width: 100%;
+    padding: 2%;
+    margin: 3% 5% 3% 5%;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 0px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
 	text-align: left;
 }
 
 
-#tarjeta h2{
+/*#tarjeta h2{
 		color: black;
 		text-align: left;
 		padding-left: 10px;
 		padding-right: 10px;	
-}
+}*/
 
-#tarjeta img{
-	padding-top: 45px;
+#tarjeta img{ /*Blank Avatar Image*/
+	padding-top: 8%;
 	padding-right: 8%;
 	width:90%;
 	margin: 10% 0 0 10%;
 	align-content: center;
 }
 
-button {
-	margin: 2% 5% 0 5%;
+button { /* Clear Button */
+	margin: 2% 10% 2% 5%;
 	align-items: center;
 	text-align: center;
-	border-radius: 25px;
-	background-color: rgba(255, 255, 255, 0.3);
+	border-radius: 4px;
+	background-color: #C9D0D4;
 	border-color: rgba(0,0,0,0);
 }
 
+#textbuildavatar{ /* Submit Button */
+	border-radius: 4px;
+	background-color: #C9D0D4;
+	border-color: rgba(0,0,0,0);
+	margin: 0 60px 0 60px;
+	padding: 10px 0 10px 0;
+}
+
+#tarjeta h3 { /* Button Text */
+	text-align: center;
+	text-transform: uppercase;
+	color: black;
+	font-size: 10px;
+	margin-top: 25px;
+}
+
 button[type=reset]{
-/*	margin-left: 75px;*/
-margin-left: 20px;
+margin-left: 5%;
 padding: 2px 5px 2px 5px;
 }
 
@@ -128,26 +227,10 @@ padding: 2px 5px 2px 5px;
 
 .buildavatar {
 	cursor: pointer;
-
 }
-
-#textbuildavatar{
-	border-radius: 25px;
-	background-color: rgba(255, 255, 255, 0.3);
-	border-color: rgba(0,0,0,0);
-	margin: 0 60px 0 60px;
-	padding: 10px 0 10px 0;
-
-}
-#tarjeta h3 {
-	text-align: center;
-	color: black;
-	font-size: 15px;
-	margin-top: 35px;
-}
-
 
 /*Printed Badge*/
+
 #AvatarProfBadge {
 	position: fixed;
 	left: 9%;
@@ -160,10 +243,9 @@ padding: 2px 5px 2px 5px;
 	text-align: left;
 	padding: 0px;
 	margin: 20px 0 0 15px;
-
 }
 
-/********************************************/
+
 div#page2_avatarcreator {
 	visibility: hidden;
 }
@@ -201,7 +283,6 @@ div#page2_avatarcreator {
 .container-inner{
 	margin: 3px 5px 0 5px;
 	background-color: rgba(0, 0, 0, 0);
-	
 }
 
 .container-inner img {
@@ -344,7 +425,7 @@ top: 5px;
 	right: 7%;
 	bottom: 7%;
 	width: 60px;
-
+	z-index: 10;
 	font-family: 'Josefin Sans', sans-serif;
 	color: black;
 	text-align: center;
@@ -374,18 +455,140 @@ top: 5px;
 }
 
 
-#quote h3 {
-	margin-top: 100px;
-	text-align: center;
+/* Shared CSS Attributes - all pages */
+
+.navbar-fixed-left {
+  position: fixed;
+	/* padding-left: 2.5%; */
+}
+
+.navbarleft {
+  display: block;
+	padding-bottom: 3vh;
+}
+
+.navbar-fixed-bottom {
+	z-index: 0;
+}
+
+.navbarleft img {
+  width: 50px;
+}
+
+#images {
+  height: 80vh;
+  display:flex;
+  justify-content: space-around;
+  align-items:center;
+}
+
+@media (min-width: 600px) {
+  #images {
+    height: 50vh;
+  }
+}
+
+@media (min-width: 600px) {/*Vertically align images*/
+	#images {
+		height: 50vh;
+	}
+}
+
+header1{
+	position: fixed;
+	padding-top: 10px;
+	padding-left: 3%;
+	z-index: 4;
+}
+
+header2{
+	position: fixed;
+	padding-top: 75px;
+	padding-left: 3%;
+}
+
+a{
+ 	color:white;
+ }
+
+h1{
+	color:white;
+	font-size: 3.5em;
 	font-style: normal;
-	font-weight: normal;
+	font-family: 'Quicksand', sans-serif;
+}
+
+h2{
+	color: white;
+	font-size: 1.6em;
+	font-weight: 100;
 	font-family: 'Josefin Sans', sans-serif;
 }
 
-#author h3{
+h3{ /*bottom Intro text*/
+	color: white;
+	font-size: 2.5vmin;
+	line-height: 1.4em;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 1px;
 	text-align: center;
-	margin-bottom: 50px;
+}
+
+h4{ /*pop-up text*/
+	color: white;
+	font-size: 2vmin;
+	line-height: 1.2em;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 1px;
+	text-align: right;
+}
+
+#intro { /*bottom Intro text*/
+	text-align: center;
 	font-style: normal;
 	font-weight: normal;
-	font-family: 'Josefin Sans', sans-serif;
+    bottom: 5%;
+	position: absolute;
+	z-index: 3;
+}
+
+
+/* Footer */
+
+/*footer h3{
+	color: white;
+	font-size: 2.5vmin;
+	line-height: 1.4em;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 1px; 
+	text-align: center;
+}*/
+
+footer {
+	text-align: center;
+	padding-bottom:1.8%;
+	}
+
+/*#footertext{
+	width: 70vw;
+	position: absolute;
+	bottom: 1%;
+	z-index: 3;
+}*/
+
+
+/* Horizontal Bottom Navbar - all pages sans Index */
+
+#leftbutton{
+	position: fixed;
+	left: 2.5%;
+	bottom:15px;
+	width:40px;
+}
+
+#rightbutton{
+	position: fixed;
+	right: 2.5%;
+	bottom: 15px;
+	width: 40px;
 }

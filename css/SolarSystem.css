@@ -1,30 +1,21 @@
 @charset "UTF-8";
 /* CSS Document */
 
-.fixed-bg {
-    /* The background image */
-    background-image: url(../img/background/SolarSystem_Bkgd.png);
-    /* Set a specified height, or the minimum height for the background image */
-    min-height: 850px;
-}
-
-h2{ /* RKW */
+/* h2{ /* RKW 
 	font-style: normal;
 	font-weight: normal;
 }
-
-
 
 h3{
 	font-style: normal;
 	font-weight: normal;
 }
 
-footer h3{ /* RKW */
+footer h3{ /* RKW 
 	font-size: 16px;
 	color:white;
 
-}
+} */
 
 #mercuryimg{
 	position: fixed;
@@ -164,7 +155,7 @@ footer h3{ /* RKW */
 }
 
 #t123{
-	margin-top: -120px;
+	/* margin-top: -120px; */
 	text-align: center;
 }
 
