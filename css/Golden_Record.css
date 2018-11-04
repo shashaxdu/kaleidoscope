@@ -1,111 +1,148 @@
 @charset "UTF-8";
-/* CSS Document */
 
-.fixed-bg {
-    /* The background image */
-  	background-image: url(../img/background/SolarSystem_ToScale.png);
-    /* Set a specified height, or the minimum height for the background image */
-    min-height: 850px;
+.content {
+	background-image: url(../img/background/SolarSystem_ToScale.png);
 }
 
-h3{
-	color: black;
-}
-
-footer h3{ /* RKW */
-	font-size: 16px;
-	color:white;
-}
-
-#X{
-	color: white;
-	font-size: 16px;
+#X {
 	cursor: pointer;
-	position: fixed;
-	z-index: 1; 
-	 visibility: hidden;
-	  	top: 140px;
-	  	left: 280px;
+	z-index: 1;
+	font-weight: bolder;
+	visibility: hidden;
+
+	/* top: 150px; */
+	/* left: 280px; */
+	/* margin-left: -100px;
+	margin-right: -100px; */
 }
 
-#site{
-	position: fixed;
-	color: white;
+#site {
 	bottom: 40px;
-	right: 285px;
+	/* right: 285px; */
 	z-index: 2;
 	visibility: hidden;
 }
 
 iframe {
-	position: fixed;
 	z-index: 1;
-	 
-	 visibility: hidden;
-	 	top: 120px;
-
-	margin: 60px 0 0 300px;
+	visibility: hidden;
+	/* top: 150px; */
+	/* margin: 60px 0 0 300px; */
 	border-color: white;
 	border-width: 2px;
 	border-radius: 25px;
-	width: 60%;
-	height: 580px;
+	/* width: 60%; */
+	height: 80%;
+}
 
+.iframe-container {
+	top: 150px;
+}
+
+.margin-150 {
+	margin-top: 150px;
+	height: 100%;
+}
+
+.align-bottom {
+	height: 60%;
+	align-items: flex-end;
+	justify-content: center;
+	width:100%;
 }
 
 #aboutrecord {
-	position: fixed;
 	background-color: rgba(245,214,147, 0.8);
+	font-family: 'Montserrat', sans-serif;
 	color: black;
 	border-radius: 25px;
-	height: 400px;
+	height: 100%;
 	padding: 10px 30px 30px 30px;
-	margin: -20px 50px 0 290px;
-	z-index: 0;
+	overflow-y: scroll;
+	z-index: 5;
 }
 
-
-#aboutrecord h3, #aboutrecord h2{
+#aboutrecord > p {
 	font-size: 16px;
-	color: black;
 	text-align: center;
 	margin-top: 20px;
 }
-#imagerecord {
 
-	position: fixed;
-	margin-top: 250px;
-	margin-left:20px;
-width: 220px;
-cursor: pointer;
-background-color: rgba(245,214,147, 0.8);
-border-radius: 110px;
+.test {
+	right: 25px;
+	bottom: 25px;
+	float: right;
+}
+
+/* Scrollbar */
+
+/* Width */
+#aboutrecord::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+#aboutrecord::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey;
+	border-radius: 10px;
+	height: 80%;
+}
+
+/* Handle */
+#aboutrecord::-webkit-scrollbar-thumb {
+	background: #ffffff80;
+	border-radius: 10px;
+}
+
+/* On Hover */
+#aboutrecord::-webkit-scrollbar-thumb:hover {
+	background: #ffffffBF;
+}
+
+/* End Scrollbar */
+
+
+/* Create Record */
+
+.create-record-wrapper {
+	width: fit-content;
+}
+
+.img-wrapper {
+	bottom: 0;
+	left: 0;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+.img-wrapper > img {
+	width: 100%;
+	min-width: 100px;
+	max-width: 220px;
+	background-color: rgba(245,214,147, 0.8);
+	border-radius: 110px;
+
+}
+
+.create-record-wrapper > a > h3 {
+	margin: 0 auto;
+	margin-top: 20px;
 }
 
 #createrecord {
-	position: fixed;
 	align-items: center;
 	text-align: center;
 	border-radius: 25px;
 	background-color: rgba(245,214,147, 0.8);
 	border-color: rgba(0,0,0,0);
-	margin: 480px 0 0 840px;
 	padding: 5px 0px 5px 0px;
-	width: 200px;
+	min-width: 100px;
+	max-width: 200px;
 	cursor: pointer;
-	
 }
 
-#voyagerimg{
-	position: fixed;
-	right: 200px;
-	bottom: 100px;
-	text-align: center;
-}
+/* End Create Record */
 
-#voyagerimg h3{	
+.fnt-13 {
 	font-size:13px;
-	margin-top: 3px;
-	color: white;
-
 }
