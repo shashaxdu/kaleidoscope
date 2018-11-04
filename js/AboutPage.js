@@ -1,12 +1,15 @@
 $(document).ready(function(){
 
 
-	$("#ufo").click(function(){
-        $("iframe").css("visibility", "visible");
-        $("#site").css("visibility", "visible");
-    	}
-    );
+// 	$("h2").hover(function(){
+//         $("iframe").css("visibility", "visible");
+//         //$(this).css("background-color", "teal");
+    
 
+//     	}, function(){
+// //        $("iframe").css("visibility", "hidden");
+//     }
+//     );
 
    
     $("#Me_Nav_Icon").hover(function(){
