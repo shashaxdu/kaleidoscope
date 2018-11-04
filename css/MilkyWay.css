@@ -15,6 +15,7 @@ h3{
 	/*Body Text*/
 }
 
+
 #milkyway{
 	width: 700px;
 	height: 400px;
@@ -61,13 +62,16 @@ h3{
 
 #trappisttext{
 	position: fixed;
-	top: 440px;
+		top: 440px;
 	left: 735px;
+
 	width: 130px;
-	visibility: hidden;
+visibility: hidden;
 	text-align: center;
 
 }
+
+
 
 #text{
 	visibility: hidden;
